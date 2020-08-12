@@ -3,7 +3,7 @@ REJECT,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyLi
 REJECT,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyListChina.list
 REJECT,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyPrivacy.list
 REJECT,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanProgramAD.list
-PORNREJECT,https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/porn.list
+REJECT,https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/porn.list
 SPEEDTEST,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Speedtest.list
 MICROSOFT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
 GOOGLE,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTubeMusic.list
