@@ -5,8 +5,8 @@ REJECT,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyPr
 REJECT,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanProgramAD.list
 REJECT,https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/porn.list
 SPEEDTEST,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Speedtest.list
-FACEBOOK&INSTAGRAM,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Ruleset/Facebook.list
-FACEBOOK&INSTAGRAM,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Ruleset/Instagram.list
+FACEBOOK,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Ruleset/Facebook.list
+INSTAGRAM,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Ruleset/Instagram.list
 MICROSOFT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
 TELEGRAM,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Ruleset/Telegram.list
 GOOGLE,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTubeMusic.list
