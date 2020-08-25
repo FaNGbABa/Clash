@@ -23,7 +23,7 @@ EU,🇪🇺
 (MO|Macao|澳.*(?!转)|CTM),🇲🇴
 (MY|Malaysia|马来西亚),🇲🇾
 (NL|Netherlands|荷兰|阿姆斯特丹),🇳🇱
-(PH|Philippines|菲律宾),🇵🇭
+(PH|Philippines|菲律宾|菲),🇵🇭
 (RO|罗马尼亚),🇷🇴
 (RU|Russia|俄.*(?!转)|伯力|莫斯科|圣彼得堡|西伯利亚|新西伯利亚|哈巴罗夫斯克|俄罗斯|京俄|杭俄),🇷🇺
 (沙特|迪拜),🇸🇦
