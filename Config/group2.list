@@ -1,5 +1,4 @@
 REJECT,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Adblock/Adblock.list
-REJECT,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Adblock/Super-Block.list
 REJECT,https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/porn.list
 SPEEDTEST,https://raw.githubusercontent.com/LM-Firefly/Rules/master/SpeedTest.list
 MICROSOFT,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Microsoft.list
