@@ -1,8 +1,8 @@
-🛑 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanAD.list
-🛑 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyList.list
-🛑 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyListChina.list
-🛑 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyPrivacy.list
-🛑 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanProgramAD.list
+⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanAD.list
+⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyList.list
+⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyListChina.list
+⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyPrivacy.list
+⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanProgramAD.list
 🛡️ 色情拦截,https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/porn.list
 🚀 测速网站,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Speedtest.list
 Ⓜ️ 微软服务,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Microsoft.list
@@ -10,7 +10,7 @@
 🥥 谷歌服务,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Google.list
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 📺 bilibili,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/BiliBili.list
-🎬 迪士尼,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
+🎬 迪士尼视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
 🎶 Spotify,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Media/Spotify.list
 🔰 GFW列表,https://raw.githubusercontent.com/LM-Firefly/Rules/master/PROXY.list
 🎥 奈飞视频,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Netflix.list
@@ -20,4 +20,4 @@ DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomai
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 DIRECT,[]GEOIP,CN
-🚧 MATCH,[]MATCH
+🐟 其它路由,[]MATCH
