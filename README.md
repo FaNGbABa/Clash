@@ -1,3 +1,3 @@
-# Clash
-Clash策略组 
-非配置文件！非配置文件！非配置文件！
+# ding ding ding
+
+别看了，啥也没有。
