@@ -7,6 +7,8 @@
 📺 bilibili`select`[]🇹🇼 台湾节点`[]🇭🇰 香港节点`[]DIRECT
 📲 电报吹水`select`[]🔄 延迟最低`[]DIRECT
 🥥 谷歌服务`select`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
+📹 YouTube,`select`[]🥥 谷歌服务
+🎵 YT Music,`select`[]🥥 谷歌服务
 🎶 Spotify`select`[]🇭🇰 香港节点`[]🇺🇸 美国节点`[]DIRECT
 🎬 迪士尼视频`select`[]🇺🇸 美国节点`[]DIRECT
 🎥 奈飞视频`select`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
@@ -19,4 +21,4 @@
 🇺🇸 美国节点`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)
 🇸🇬 狮城节点`select`(SG|Singapore|新.*(?!转)|狮城|沪新|京新|泉新|穗新|深新|新)
 ⛔️ 广告拦截`select`[]REJECT`[]DIRECT
-🛡️ 色情拦截`select`[]REJECT`[]DIRECT
+🛡️ 色情卫士`select`[]REJECT`[]DIRECT
