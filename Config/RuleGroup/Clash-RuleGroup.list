@@ -1,10 +1,9 @@
-⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanAD.list
-⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyList.list
-⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyListChina.list
-⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanEasyPrivacy.list
-⛔️ 广告拦截,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/BanProgramAD.list
-🤖 TikTok,https://raw.githubusercontent.com/FaNGbABa/Rules/master/Global-Services/TikTok.list
-🛡️ 色情卫士,https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/Rule-list/Porn.list
+⛔️ 广告拦截,https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/BanAD.list
+⛔️ 广告拦截,https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/BanEasyList.list
+⛔️ 广告拦截,https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/BanEasyListChina.list
+⛔️ 广告拦截,https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/BanEasyPrivacy.list
+⛔️ 广告拦截,https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/BanProgramAD.list
+🛡️ 色情卫士,https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/Config/RuleGroup/RuleSetGroup.list
 🚀 测速网站,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Speedtest.list
 Ⓜ️ 微软服务,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Microsoft.list
 📲 电报吹水,https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Ruleset/Telegram.list
@@ -14,7 +13,7 @@
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 📺 bilibili,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/BiliBili.list
 🎬 迪士尼视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
-🎶 Spotify,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Media/Spotify.list
+🎶 Spotify,https://raw.githubusercontent.com/FaNGbABa/Profiles-1/master/Surge/Ruleset/Media/Spotify.list
 🔰 GFW列表,https://raw.githubusercontent.com/LM-Firefly/Rules/master/PROXY.list
 🎥 奈飞视频,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Netflix.list
 DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
