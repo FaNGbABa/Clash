@@ -12,6 +12,7 @@ DIRECT,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/P
 📺 bilibili,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Rules@master/Clash-RuleSet-Classical/Domestic-Services/BiliBili.yaml,10800
 🎬 迪士尼视频,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/Providers/Ruleset/DisneyPlus.yaml,10800
 🎶 Spotify,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Rules@master/Clash-RuleSet-Classical/Global-Services/Spotify.yaml,10800
+🎵 网易云音乐,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Rules@master/Clash-RuleSet-Classical/Domestic-Services/NeteaseMusic.yaml,10800
 🔰 GFW列表,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/ACL4SSR@master/Clash/Providers/ProxyGFWlist.yaml,10800
 🎥 奈飞视频,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Rules@master/Clash-RuleSet-Classical/Netflix.yaml,10800
 DIRECT,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Rules@master/Clash-RuleSet-Classical/Domestic.yaml,10800
