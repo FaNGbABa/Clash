@@ -5,7 +5,7 @@
 🛡️ 色情卫士,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/RuleSet/Porn.yaml,10800
 🚀 测速网站,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/SpeedTest.yaml,10800
 Ⓜ️ 微软服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml,10800
-📲 电报吹水,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml,10800
+📲 电报消息,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml,10800
 📹 YouTube,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/YouTube.yaml,10800
 🥥 谷歌服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml,10800
@@ -13,7 +13,7 @@ DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/C
 🎬 迪士尼视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/DisneyPlus.yaml,10800
 🎶 Spotify,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Spotify.yaml,10800
 🎵 网易云音乐,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic-Services/NeteaseMusic.yaml,10800
-🔰 GFW列表,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml,10800
+🔮 PROXY,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml,10800
 🎥 奈飞视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Netflix.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml,10800
@@ -21,4 +21,4 @@ DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/C
 DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/CCC-CN.yaml,10800
 DIRECT,[]GEOIP,CN
-🐟 其它路由,[]MATCH
+🐟 漏网之鱼,[]MATCH
