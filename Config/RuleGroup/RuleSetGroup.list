@@ -23,4 +23,4 @@ DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/C
 DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/CCC-CN.yaml,10800
 DIRECT,[]GEOIP,CN
-🐟 漏网之鱼,[]MATCH
+🔮 PROXY,[]MATCH
