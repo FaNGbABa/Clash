@@ -9,6 +9,7 @@
 📹 YouTube,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/YouTube.yaml,10800
 🥥 谷歌服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml,10800
+🍙 Twitch,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Twitch.yaml,10800
 📺 bilibili,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic-Services/BiliBili.yaml,10800
 📺 Bahamut,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Bahamut.yaml,10800
 🎬 迪士尼视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/DisneyPlus.yaml,10800
