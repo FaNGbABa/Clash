@@ -30,7 +30,7 @@ hosts:
 dns:
   enable: true
   listen: 127.0.0.1:1053
-  ipv6: true
+  ipv6: false
 {% endif %}
 {% else %}
 #interface-name: WLAN
@@ -40,13 +40,21 @@ hosts:
 dns:
   enable: true
   listen: 127.0.0.1:1053
-  ipv6: true
+  ipv6: false
 {% endif %}
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
   default-nameserver:
     - 223.5.5.5
     - 8.8.8.8
+    - 1.1.1.1
+    - 180.76.76.76
+    - 202.102.134.68
+    - 202.102.154.3
+    - 202.102.128.68
+    - 114.114.114.114
+    - 114.114.115.115
+    - 123.125.81.6
   enhanced-mode: fake-ip # redir-host #fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -68,6 +76,15 @@ dns:
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
+    - 8.8.8.8
+    - 1.1.1.1
+    - 180.76.76.76
+    - 202.102.134.68
+    - 202.102.154.3
+    - 202.102.128.68
+    - 114.114.114.114
+    - 114.114.115.115
+    - 123.125.81.6
     - https://doh.rixcloud.dev/dns-query
     - https://dns.alidns.com/dns-query
     - https://cloudflare-dns.com/dns-query
@@ -208,6 +225,8 @@ skip-server-cert-verify = true
 
 [DNS]
 1.1.1.1
+8.8.8.8
+223.5.5.5
 
 [REWRITE]
 
@@ -239,6 +258,13 @@ server=119.29.29.29
 server=223.5.5.5
 server=1.0.0.1
 server=8.8.8.8
+server=180.76.76.76
+server=202.102.134.68
+server=202.102.154.3
+server=202.102.128.68
+server=114.114.114.114
+server=114.114.115.115
+server=123.125.81.6
 
 [policy]
 static=♻️ 自动选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
@@ -311,7 +337,7 @@ exclude-simple-hostnames = true
 external-controller-access = surfboard@127.0.0.1:6170
 hide-crashlytics-request = false
 interface = 0.0.0.0
-ipv6 = true
+ipv6 = false
 loglevel = notify
 port = 8828
 socks-interface = 0.0.0.0
