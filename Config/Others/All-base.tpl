@@ -15,7 +15,7 @@ secret: ''
 {% if request.clash.dns == "cfw" %}
 interface-name: WLAN
 # authentication:
-#  - "firefly:960923"
+#   - "firefly:960923"
 hosts: 
    '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
@@ -26,8 +26,8 @@ dns:
 {% endif %}
 {% if request.clash.dns == "cfa" %}
 interface-name: WLAN
-authentication:
-  - "firefly:960923"
+# authentication:
+#   - "firefly:960923"
 hosts:
    '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
@@ -38,8 +38,8 @@ dns:
 {% endif %}
 {% else %}
 interface-name: WLAN
-authentication:
-  - "firefly:960923"
+# authentication:
+#   - "firefly:960923"
 hosts:
    '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
