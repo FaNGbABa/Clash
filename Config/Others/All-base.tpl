@@ -14,32 +14,35 @@ secret: ''
 {% if exists("request.clash.dns") %}
 {% if request.clash.dns == "cfw" %}
 interface-name: WLAN
-#authentication:
-#  - "firefly:960923"
-hosts:
+authentication:
+  - "firefly:960923"
+hosts:   '*.clash.dev': 127.0.0.1
+   'alpha.clash.dev': '::1'
+
 dns:
   enable: true
   listen: 0.0.0.0:53
-  ipv6: true
+  ipv6: false
 {% endif %}
 {% if request.clash.dns == "cfa" %}
-#interface-name: WLAN
-#authentication:
-#  - "firefly:960923"
+interface-name: WLAN
+authentication:
+  - "firefly:960923"
 hosts:
+   '*.clash.dev': 127.0.0.1
+   'alpha.clash.dev': '::1'
 dns:
   enable: true
   listen: 0.0.0.0:53
   ipv6: false
 {% endif %}
 {% else %}
-#interface-name: WLAN
-#authentication:
-#  - "firefly:960923"
+interface-name: WLAN
+authentication:
+  - "firefly:960923"
 hosts:
    '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
-
 dns:
   enable: true
   listen: 0.0.0.0:53
