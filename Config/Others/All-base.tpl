@@ -1,10 +1,10 @@
 {% if request.target == "clash" or request.target == "clashr" %}
-http-port:7890
-socks5-port:7891
+http-port:{{ local.clash.http_port }}
+socks5-port:{{ local.clash.socks5_port }}
 mixed-port: {{ local.clash.mixed_port }}
 redir-port: {{ local.clash.redir_port}}
 allow-lan: {{ local.clash.allow_lan }}
-# bind-address: "10.0.0.1"
+bind-address: "10.0.0.1"
 mode: rule
 # When set to false, resolver won't translate hostnames to IPv6 addresses
 ipv6: false
