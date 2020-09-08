@@ -3,7 +3,7 @@
 mixed-port: {{ local.clash.mixed_port }}
 redir-port: {{ local.clash.redir_port}}
 allow-lan: {{ local.clash.allow_lan }}
-bind-address: "10.0.0.1"
+bind-address: "127.0.0.1"
 mode: rule
 # When set to false, resolver won't translate hostnames to IPv6 addresses
 ipv6: false
@@ -14,8 +14,8 @@ secret: ''
 {% if exists("request.clash.dns") %}
 {% if request.clash.dns == "cfw" %}
 interface-name: WLAN
-authentication:
-  - "firefly:960923"
+# authentication:
+#  - "firefly:960923"
 hosts: 
    '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
