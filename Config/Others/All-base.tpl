@@ -1,9 +1,10 @@
 {% if request.target == "clash" or request.target == "clashr" %}
-
+http-port:7890
+socks5-port:7891
 mixed-port: {{ local.clash.mixed_port }}
 redir-port: {{ local.clash.redir_port}}
 allow-lan: {{ local.clash.allow_lan }}
-# bind-address: "*"
+# bind-address: "10.0.0.1"
 mode: rule
 # When set to false, resolver won't translate hostnames to IPv6 addresses
 ipv6: false
@@ -21,7 +22,7 @@ hosts:
    'alpha.clash.dev': '::1'
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: 127.0.0.1:1053
   ipv6: false
 {% endif %}
 {% if request.clash.dns == "cfa" %}
@@ -33,7 +34,7 @@ hosts:
    'alpha.clash.dev': '::1'
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: 127.0.0.1:1053
   ipv6: false
 {% endif %}
 {% else %}
@@ -45,7 +46,7 @@ hosts:
    'alpha.clash.dev': '::1'
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: 127.0.0.1:1053
   ipv6: false
 {% endif %}
   # These nameservers are used to resolve the DNS nameserver hostnames below.
