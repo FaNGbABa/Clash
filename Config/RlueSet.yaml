@@ -1,0 +1,46 @@
+mixed-port: 7890
+allow-lan: true
+ipv6: false
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [119.29.29.29, 156.154.70.5]
+    enhanced-mode: redir-host
+    nameserver: ['tls://rubyfish.cn', 'tls://dns.rubyfish.cn', 'tls://dns.alidns.com']
+    fallback: ['tls://cloudflare-dns.com', 'tls://dns.google', 'tls://435d75.dns.nextdns.io']
+    fallback-filter: { geoip: true }
+proxies:
+
+proxy-groups:
+    - { name: 示例, type: select, proxies: [韩国01, 香港01, 美国01] }
+    - { name: StreamingSE, type: select, proxies: [DIRECT, 韩国01, 香港01, 美国01] }
+    - { name: Zoom, type: select, proxies: [DIRECT, 韩国01, 香港01, 美国01] }
+    - { name: Final, type: select, proxies: [抑郁云, DIRECT, 韩国01, 香港01, 美国01] }
+rule-providers:
+    Unbreak: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/Unbreak.yaml, url: '示例', interval: 86400 }
+    Streaming: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/StreamingMedia/Streaming.yaml, url: '示例', interval: 86400 }
+    StreamingSE: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/StreamingMedia/StreamingSE.yaml, url: '示例', interval: 86400 }
+    Global: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/Global.yaml, url: '示例', interval: 86400 }
+    OneDrive: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/Extra/Microsoft/OneDrive.yaml, url: '示例', interval: 86400 }
+    Zoom: { type: http, behavior: classical, path: ./Rules/Sanczzg/FrustratingJoyMaintain/Rules/Zoom.yaml, url: '示例', interval: 86400 }
+    China: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/China.yaml, url: '示例', interval: 86400 }
+    ChinaIP: { type: http, behavior: ipcidr, path: ./Rules/DivineEngine/Profiles/RuleSet/Extra/ChinaIP.yaml, url: '示例', interval: 86400 }
+rules:
+    - 'RULE-SET,Unbreak,DIRECT'
+    - 'RULE-SET,Streaming,示例'
+    - 'RULE-SET,StreamingSE,StreamingSE'
+    - 'RULE-SET,Zoom,Zoom,no-resolve'
+    - 'RULE-SET,OneDrive,示例'
+    - 'RULE-SET,Global,示例'
+    - 'RULE-SET,China,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'RULE-SET,ChinaIP,DIRECT'
+    - 'MATCH,Final'
