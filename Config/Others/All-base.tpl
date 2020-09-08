@@ -16,9 +16,9 @@ secret: ''
 interface-name: WLAN
 authentication:
   - "firefly:960923"
-hosts:   '*.clash.dev': 127.0.0.1
+hosts: 
+   '*.clash.dev': 127.0.0.1
    'alpha.clash.dev': '::1'
-
 dns:
   enable: true
   listen: 0.0.0.0:53
