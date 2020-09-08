@@ -6,7 +6,7 @@ allow-lan: {{ local.clash.allow_lan }}
 # bind-address: "*"
 mode: rule
 # When set to false, resolver won't translate hostnames to IPv6 addresses
-ipv6: true
+ipv6: false
 log-level: {{ local.clash.log_level }}
 external-controller: {{ local.clash.api_port}}
 
@@ -29,7 +29,7 @@ dns:
 hosts:
 dns:
   enable: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:53
   ipv6: false
 {% endif %}
 {% else %}
@@ -37,9 +37,12 @@ dns:
 #authentication:
 #  - "firefly:960923"
 hosts:
+   '*.clash.dev': 127.0.0.1
+   'alpha.clash.dev': '::1'
+
 dns:
   enable: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:53
   ipv6: false
 {% endif %}
   # These nameservers are used to resolve the DNS nameserver hostnames below.
@@ -55,7 +58,7 @@ dns:
     - 114.114.114.114
     - 114.114.115.115
     - 123.125.81.6
-  enhanced-mode: fake-ip # redir-host #fake-ip
+  enhanced-mode: redir-host # redir-host #fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
@@ -82,44 +85,51 @@ dns:
     - 202.102.134.68
     - 202.102.154.3
     - 202.102.128.68
+    - 117.50.11.11
+    - 117.50.10.10
     - 114.114.114.114
     - 114.114.115.115
     - 123.125.81.6
     - https://doh.rixcloud.dev/dns-query
     - https://dns.alidns.com/dns-query
+    - https://doh.360.cn/dns-query
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
     - https://doh.opendns.com/dns-query
-    - https://dns.twnic.tw/dns-query
-#    - https://dns.quad9.net/dns-query
-#    - https://doh.qis.io/dns-query
-#    - https://doh.powerdns.org
-    #    - 101.101.101.101
-    #    - tcp://119.29.107.85:9090
-    #    - https://doh.dns.sb/dns-query
-    #    - https://dns.rubyfish.cn/dns-query
-    #    - https://sdns.233py.com/dns-query
-    #    - https://edns.233py.com/dns-query
-    #    - tls://cloudflare-dns.com:853
-    #    - tls://dns.google:853
-    #    - tls://dns-tls.qis.io:853
-  fallback:
-#    - https://dns.alidns.com/dns-query
     - https://dns.twnic.tw/dns-query
     - https://dns.quad9.net/dns-query
+    - https://doh.qis.io/dns-query
+    - https://doh.powerdns.org
+    - 101.101.101.101
+    - tcp://119.29.107.85:9090
+    - https://doh.dns.sb/dns-query
+    - https://dns.rubyfish.cn/dns-query
+    - https://sdns.233py.com/dns-query
+    - https://edns.233py.com/dns-query
+    - tls://cloudflare-dns.com:853
+    - tls://dns.google:853
+    - tls://dns-tls.qis.io:853
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+    - tls://dns.rubyfish.cn:853
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+    - https://dns.rubyfish.cn/dns-query
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - https://dns.quad9.net/dns-query
     - https://doh.qis.io/dns-query
     - https://doh.opendns.com/dns-query
-    - https://doh.powerdns.org
-    #   - tcp://1.1.1.1
-    #    - https://doh.dns.sb/dns-query
-    #    - https://dns.rubyfish.cn/dns-query
-    #    - https://sdns.233py.com/dns-query
-    #    - https://edns.233py.com/dns-query
-    #    - tls://cloudflare-dns.com:853
-    #    - tls://dns.google:853
-    #    - tls://dns-tls.qis.io:853
+    - https://doh.powerdns.org  
+    - https://doh.dns.sb/dns-query
+    - https://sdns.233py.com/dns-query
+    - https://edns.233py.com/dns-query
+    - tls://cloudflare-dns.com:853
+    - tls://dns.google:853
+    - tls://dns-tls.qis.io:853
   fallback-filter:
     geoip: true # default
     ipcidr: # ips in these subnets will be considered polluted
@@ -132,8 +142,8 @@ dns:
 
 [General]
 loglevel = notify
-internet-test-url = http://connectivitycheck.gstatic.com/generate_204
-proxy-test-url = http://connectivitycheck.gstatic.com/generate_204
+internet-test-url = https://cp.cloudflare.com/generate_204
+proxy-test-url = https://cp.cloudflare.com/generate_204
 test-timeout = 3
 socks5-listen = 8828
 http-listen = 8829
@@ -345,8 +355,8 @@ socks-port = 8829
 wifi-access-http-port=8838
 wifi-access-socks5-port=8839
 test-timeout = 5
-internet-test-url = http://connectivitycheck.gstatic.com/generate_204
-proxy-test-url = http://connectivitycheck.gstatic.com/generate_204
+internet-test-url = https://cp.cloudflare.com/generate_204
+proxy-test-url = https://cp.cloudflare.com/generate_204
 
 {% endif %}
 {% if request.target == "sssub" %}
