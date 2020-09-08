@@ -15,8 +15,8 @@ DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/C
 🎬 迪士尼视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/DisneyPlus.yaml,10800
 🎶 Spotify,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Spotify.yaml,10800
 🎵 网易云音乐,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic-Services/NeteaseMusic.yaml,10800
-🔮 PROXY,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml,10800
 🎥 奈飞视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Netflix.yaml,10800
+🔮 PROXY,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml,10800
