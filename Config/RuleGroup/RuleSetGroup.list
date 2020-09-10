@@ -9,9 +9,9 @@
 🚀 测速网站,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/SpeedTest.yaml,10800
 Ⓜ️ 微软服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml,10800
 📲 电报消息,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml,10800
+DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml,10800
 📹 YouTube,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Global-Services/YouTube.yaml,10800
 🥥 谷歌服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Google.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml,10800
 🍙 Twitch,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Twitch.yaml,10800
 📺 bilibili,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic-Services/BiliBili.yaml,10800
 📺 Bahamut,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Bahamut.yaml,10800
