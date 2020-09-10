@@ -1,4 +1,5 @@
 ⛔️ 广告拦截,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/RuleSet/BanAD.yaml,10800
+⛔️ 广告拦截,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Reject.yaml,10800
 ⛔️ 广告拦截,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/BanAD.yaml,10800
 ⛔️ 广告拦截,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/BanEasyList.yaml,10800
 ⛔️ 广告拦截,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml,10800
@@ -23,5 +24,7 @@ DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/C
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml,10800
 DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml,10800
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/CCC-CN.yaml,10800
+DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Special.yaml,10800
+DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Domestic%20IPs.yaml,10800
 DIRECT,[]GEOIP,CN
 🔮 PROXY,[]MATCH
