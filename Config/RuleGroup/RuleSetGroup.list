@@ -28,4 +28,5 @@ DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Cla
 DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Special.yaml,10800
 DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Domestic%20IPs.yaml,10800
 DIRECT,[]GEOIP,CN
-🔮 PROXY,[]MATCH
+🐟 漏网之鱼,[]MATCH
+
