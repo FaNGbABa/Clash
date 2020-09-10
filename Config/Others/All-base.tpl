@@ -112,6 +112,7 @@ dns:
     - tls://cloudflare-dns.com:853
     - tls://dns.google:853
     - tls://dns-tls.qis.io:853
+    - tls://dns.adguard.com:853
   fallback:
     - 8.8.8.8
     - 1.1.1.1
