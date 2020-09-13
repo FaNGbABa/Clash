@@ -11,7 +11,8 @@
 🎶 Spotify`select`[]🇭🇰 香港节点`[]🇺🇸 美国节点`[]DIRECT
 🎵 网易云音乐`select`[]DIRECT`(Unblock)
 🎬 迪士尼视频`select`[]🇺🇸 美国节点`[]DIRECT
-🎥 奈飞视频`select`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
+🎞️ HBO视频`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
+🎥 奈飞视频`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
 🐟 漏网之鱼`select`[]DIRECT`[]🔮 PROXY
 ♻️ 故障转移`fallback`.*`https://cp.cloudflare.com/generate_204`180,,30
 🔄 延迟最低`url-test`.*`[]REJECT`https://cp.cloudflare.com/generate_204`180,,30
@@ -21,4 +22,5 @@
 🇯🇵 日本节点`select`(JP|Japan|日.*(?!转)|东京|大阪|埼玉|沪日|穗日|川日|中日|泉日|日)
 🇺🇸 美国节点`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)
 🇸🇬 狮城节点`select`(SG|Singapore|新.*(?!转)|狮城|沪新|京新|泉新|穗新|深新|新)
+🇵🇭 菲律宾节点`select`(PH|Philippines|菲律宾|菲)
 🛡️ 色情卫士`select`[]REJECT`[]DIRECT
