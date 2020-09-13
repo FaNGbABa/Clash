@@ -6,12 +6,12 @@
 📺 bilibili`select`[]🇹🇼 台湾节点`[]🇭🇰 香港节点`[]DIRECT
 📺 Bahamut`select`[]🇹🇼 台湾节点`[]🇭🇰 香港节点`[]DIRECT
 📲 电报消息`select`[]🔄 延迟最低`[]DIRECT
-🥥 谷歌服务`select`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]🇹🇼 台湾节点`[]🇯🇵 日本节点`[]🇸🇬 狮城节点`[]DIRECT
+🥥 谷歌服务`select`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]🇹🇼 台湾节点`[]🇯🇵 日本节点`[]🇸🇬 狮城节点`[]👉🏼 手动选择`[]DIRECT
 📹 YouTube`select`[]🥥 谷歌服务`[]⚖️ 负载均衡
 🎶 Spotify`select`[]🇭🇰 香港节点`[]🇺🇸 美国节点`[]DIRECT
 🎵 网易云音乐`select`[]DIRECT`(Unblock)
 🎬 迪士尼视频`select`[]🇺🇸 美国节点`[]DIRECT
-🎞️ HBO视频`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
+🎞️ HBO视频`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇵🇭 菲律宾节点`[]DIRECT
 🎥 奈飞视频`select`[]🇸🇬 狮城节点`[]🇹🇼 台湾节点`[]🇺🇸 美国节点`[]🇭🇰 香港节点`[]DIRECT
 🐟 漏网之鱼`select`[]DIRECT`[]🔮 PROXY
 ♻️ 故障转移`fallback`.*`https://cp.cloudflare.com/generate_204`180,,30
