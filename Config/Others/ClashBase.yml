@@ -55,6 +55,7 @@ dns:
      - 8.8.8.8 # 谷歌DNS
      - 1.1.1.1 # Cloudflare DNS
      - https://dns.google/dns-query
+     - https://cloudflare-dns.com/dns-query
   fallback-filter:
      geoip: true # 默认
      ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
