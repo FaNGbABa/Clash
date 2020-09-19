@@ -1,4 +1,5 @@
 payload:
   # Emby 视频 待完善
+  - DOMAIN-SUFFIX,xeton.dev
   - DOMAIN-SUFFIX,movie.xeton.dev
   - DOMAIN-SUFFIX,plus.xeton.dev
