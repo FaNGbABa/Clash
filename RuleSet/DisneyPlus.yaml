@@ -1,6 +1,7 @@
 payload:
   # 内容：DisneyPlus
   # 数量：12条
+  # https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DisneyPlus.yaml
   # USER-AGENT,Disney*
   # USER-AGENT,Disney+*
   - DOMAIN,cdn.cdn.unid.go.com
