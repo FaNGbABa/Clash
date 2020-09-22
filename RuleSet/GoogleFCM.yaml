@@ -1,5 +1,6 @@
 payload:
   # 内容：GoogleFCM 谷歌推送服务
+  # Url:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/GoogleFCM.yaml
   # 数量：35条
   - DOMAIN,alt1-mtalk.google.com
   - DOMAIN,alt2-mtalk.google.com
