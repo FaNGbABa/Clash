@@ -1,5 +1,6 @@
 payload:
   ## > YouTube
+  # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/YouTube.yaml
   - DOMAIN-SUFFIX,ggpht.cn
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,googlevideo.com
