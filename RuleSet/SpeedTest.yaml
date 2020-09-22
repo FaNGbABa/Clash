@@ -1,4 +1,5 @@
 payload:
+  # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/SpeedTest.yaml
   ## > Speedtest by Ookla
   - DOMAIN-KEYWORD,ookla
   - DOMAIN-KEYWORD,speedtest
