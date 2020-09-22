@@ -1,5 +1,6 @@
 payload:
   ## 📺 哔哩哔哩番剧
+  https://git.dler.io/FaNGbABa/Clash/master/RuleSet/BiliBiliHMT.yaml
   ## > Bilibili
   - DOMAIN-SUFFIX,acg.tv
   - DOMAIN-SUFFIX,acgvideo.com
