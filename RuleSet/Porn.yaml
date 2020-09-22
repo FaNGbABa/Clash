@@ -1,5 +1,6 @@
 payload:
   # 🍊 色情内容拦截，保护青少年身心健康。
+  # Url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Porn.yaml
   - DOMAIN-SUFFIX,phncdn.com
   - DOMAIN-SUFFIX,phprcdn.com
   - DOMAIN-SUFFIX,pornhub.com
