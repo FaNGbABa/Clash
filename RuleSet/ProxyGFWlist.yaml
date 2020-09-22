@@ -1,7 +1,8 @@
 payload:
-# GFW代理列表
+  # GFW代理列表
+  # Url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProxyGFWlist.yaml
 
-# MyList && Other
+  # MyList && Other
   - DOMAIN-SUFFIX,1password.com
   - DOMAIN-SUFFIX,bit.no.com
   - DOMAIN-SUFFIX,btlibrary.me
