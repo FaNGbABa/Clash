@@ -1,6 +1,7 @@
 payload:
   # 内容：Telegram
   # 数量：13条
+  # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Telegram.yaml
   - DOMAIN-KEYWORD,telegram
   - DOMAIN-SUFFIX,t.me
   - DOMAIN-SUFFIX,tdesktop.com
