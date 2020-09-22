@@ -1,6 +1,7 @@
 payload:
   # 内容：Spotify
   # 数量：8条
+  # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Spotify.yaml
   # USER-AGENT,Spotify*
   - DOMAIN-KEYWORD,-spotify-com
   - DOMAIN-KEYWORD,spotify.com
