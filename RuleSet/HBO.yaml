@@ -1,5 +1,6 @@
 payload:
   ## > HBO NOW & HBO GO HKG
+  # Url:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml
   - DOMAIN-SUFFIX,hbo.com
   - DOMAIN-SUFFIX,hbogo.com
   - DOMAIN-SUFFIX,hbonow.com
