@@ -1,27 +1,20 @@
-🛡️ 色情卫士,surge:https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/Rule-list/Porn20200910.list,10800
-🛡️ 色情卫士,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Clash/master/Config/RuleSet/Porn.yaml,10800
-🚀 测速网站,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/SpeedTest.yaml,10800
-Ⓜ️ 微软服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml,10800
-📲 电报消息,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml,10800
-📹 YouTube,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Global-Services/YouTube.yaml,10800
-🥥 谷歌服务,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Google.yaml,10800
-🍙 Twitch,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Twitch.yaml,10800
-📺 bilibili,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic-Services/BiliBili.yaml,10800
-📺 Bahamut,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Bahamut.yaml,10800
-🎬 迪士尼视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/DisneyPlus.yaml,10800
-🎶 Spotify,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/Ruleset/Spotify.yaml,10800
-🎵 网易云音乐,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic-Services/NeteaseMusic.yaml,10800
-🎞️ HBO视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Global-Services/HBO.yaml,10800
-🎥 奈飞视频,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Netflix.yaml,10800
-🔮 PROXY,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/Domestic.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml,10800
-DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules/master/Clash-RuleSet-Classical/CCC-CN.yaml,10800
-DIRECT,clash-classic:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Special.yaml,10800
-DIRECT,clash-ipcidr:https://raw.githubusercontent.com/FaNGbABa/Rules-1/master/Clash/Provider/Domestic%20IPs.yaml,10800
+REJECT,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Porn.yaml,10800
+SpeedTest,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/SpeedTest.yaml,10800
+Microsoft,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Microsoft.yaml,10800
+Telegram,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Telegram.yaml,10800
+DIRECT,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/GoogleFCM.yaml,10800
+YouTube,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/YouTube.yaml,10800
+Google,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Google.yaml,10800
+Twitch,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Twitch.yaml,10800
+bilibili,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/BiliBiliHMT.yaml,10800
+Bahamut,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Bahamut.yaml,10800
+Emby,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Emby.yaml,10800
+Disney+,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DisneyPlus.yaml,10800
+Spotify,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Spotify.yaml,10800
+HBO,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml,10800
+NETFLIX,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml,10800
+PROXY,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProxyGFWlist.yaml,10800
+DIRECT,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml,10800
+DIRECT,clash-ipcidr:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DomesticIp.yaml,10800
 DIRECT,[]GEOIP,CN
-🐟 漏网之鱼,[]MATCH
-
+Others,[]MATCH
