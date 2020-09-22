@@ -1,5 +1,6 @@
 payload:
   ## 🌏 Domestic
+  # https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml
   # MyList
   - DOMAIN-SUFFIX,423down.com
   - DOMAIN-SUFFIX,bokecc.com
