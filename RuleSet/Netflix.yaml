@@ -1,5 +1,6 @@
 payload:
   ## > Netflix
+  # Url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml
   - DOMAIN,netflix.com.edgesuite.net
   - DOMAIN-SUFFIX,fast.com
   - DOMAIN-SUFFIX,netflix.com
