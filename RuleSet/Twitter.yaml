@@ -1,5 +1,6 @@
 payload:
   ## > Twitter
+  # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Twitter.yaml
   - DOMAIN-SUFFIX,ads-twitter.com
   - DOMAIN-SUFFIX,periscope.tv
   - DOMAIN-SUFFIX,pscp.tv
