@@ -1,46 +1,423 @@
-mixed-port: 7890
+mixed-port: 8888
+port: 8889
+socks-port: 8890
 allow-lan: true
-ipv6: false
 mode: rule
 log-level: info
-external-controller: '127.0.0.1:9090'
+external-controller: 127.0.0.1:9090
+experimental:
+  ignore-resolve-fail: true
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [119.29.29.29, 156.154.70.5]
-    enhanced-mode: redir-host
-    nameserver: ['tls://rubyfish.cn', 'tls://dns.rubyfish.cn', 'tls://dns.alidns.com']
-    fallback: ['tls://cloudflare-dns.com', 'tls://dns.google', 'tls://435d75.dns.nextdns.io']
-    fallback-filter: { geoip: true }
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 119.29.29.29
+    - 192.168.2.1
+    - 233.5.5.5
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - localhost.ptlogin2.qq.com
+  nameserver:
+    - 223.5.5.5
+    - 180.76.76.76
+    - 119.29.29.29
+    - 192.168.2.1
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
 proxies:
-
+# - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
+# - {name: 解锁网易云灰色歌曲(在线), type: http, server: 106.15.250.108, port: 30000, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
+proxy-providers:
+  All-Sub: # 所有节点
+    type: http 
+    path: ./providers/All-Sub.yaml
+    url: https://suo.yt/ # Node list
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  HK: # 香港节点
+    type: http
+    path: ./providers/HK.yaml
+    url: https://suo.yt/
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  JP: # 日本节点
+    type: http
+    path: ./providers/JP.yaml
+    url: https://suo.yt/
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  US: # 美国节点
+    type: http
+    path: ./providers/US.yaml
+    url: https://suo.yt/
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  TW: # 台湾节点
+    type: http
+    path: ./providers/TW.yaml
+    url: https://suo.yt/
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SG: # 狮城节点
+    type: http
+    path: ./providers/SG.yaml
+    url: https://suo.yt/
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  PH: # 菲律宾节点
+    type: http
+    path: ./providers/PH.yaml
+    url: https://suo.yt/
+    interval: 10800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
 proxy-groups:
-    - { name: 示例, type: select, proxies: [韩国01, 香港01, 美国01] }
-    - { name: StreamingSE, type: select, proxies: [DIRECT, 韩国01, 香港01, 美国01] }
-    - { name: Zoom, type: select, proxies: [DIRECT, 韩国01, 香港01, 美国01] }
-    - { name: Final, type: select, proxies: [抑郁云, DIRECT, 韩国01, 香港01, 美国01] }
+  - name: PROXY # 网站代理
+    type: select
+    # use:
+    #  - All-Sub 
+    proxies:
+      - Fallback
+      - Url-Test
+      - Load-Balance
+      - Manual
+      - DIRECT 
+  - name: Manual # 手动选择组
+    type: select
+    use:
+      - All-Sub
+  - name: SpeedTest # 速度测试
+    type: select
+    use:
+      - All-Sub
+  - name: Microsoft # 微软服务
+    type: fallback
+    url: https://cp.cloudflare.com/generate_204
+    interval: 180
+    proxies:
+      - HK
+      - DIRECT
+  - name: Twitch # 老鼠台直播
+    type: fallback
+    url: https://cp.cloudflare.com/generate_204
+    interval: 180
+    proxies:
+      - JP
+      - DIRECT
+  - name: bilibili # 港台番剧
+    type: select
+    proxies:
+      - TW
+      - HK
+      - DIRECT
+  - name: Bahamut # 巴哈姆特 动画疯
+    type: select
+    proxies:
+      - TW
+      - HK
+      - DIRECT
+  - name: Telegram # 电报吹水
+    type: select
+    proxies:
+      - Url-Test
+      - DIRECT
+  - name: Google # 谷歌服务
+    type: select
+    proxies:
+      - US
+      - Manual
+      - DIRECT
+  - name: YouTube # 油管视频
+    type: select
+    proxies:
+      - Google
+      - Load-Balance
+  - name: Spotify # 声破天
+    type: fallback
+    url: https://cp.cloudflare.com/generate_204
+    interval: 180
+    proxies:
+      - US
+      - HK
+      - DIRECT
+  - name: Emby # Emby体验服 仅限US SG HK地区
+    type: select
+    proxies:
+      - HK
+      - SG
+      - US
+      - DIRECT
+  - name: Disney+ # 迪士尼视频
+    type: select
+    use:
+      - US
+  - name: HBO # HBO
+    type: select
+    proxies:
+      - PH
+      - DIRECT
+  - name: NETFLIX # 网飞视频
+    type: select
+    proxies:
+      - SG
+      - TW
+      - US
+      - HK
+      - DIRECT
+  # 自动选择组
+  - name: Fallback # 故障转移
+    type: fallback
+    use:
+      - HK
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: Load-Balance # 负载均衡
+    type: load-balance
+    use:
+      - HK
+      - TW
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: Url-Test # 延迟最低
+    type: url-test
+    use:
+      - All-Sub
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 30
+# 按国家分组
+  - name: HK # 香港节点
+    type: fallback
+    use:
+      - HK
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: TW # 台湾节点
+    type: select
+    use:
+      - TW
+  - name: JP # 日本节点
+    type: fallback
+    use:
+      - JP
+    url: http://www.gstatic.com/generate_204
+    interval: 300 
+  - name: US # 美国节点
+    type: fallback
+    use:
+      - US
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: SG # 狮城节点
+    type: fallback
+    use:
+      - SG
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: PH # 菲律宾节点
+    type: fallback
+    use:
+      - PH
+    url: http://www.gstatic.com/generate_204
+    interval: 300
 rule-providers:
-    Unbreak: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/Unbreak.yaml, url: '示例', interval: 86400 }
-    Streaming: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/StreamingMedia/Streaming.yaml, url: '示例', interval: 86400 }
-    StreamingSE: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/StreamingMedia/StreamingSE.yaml, url: '示例', interval: 86400 }
-    Global: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/Global.yaml, url: '示例', interval: 86400 }
-    OneDrive: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/Extra/Microsoft/OneDrive.yaml, url: '示例', interval: 86400 }
-    Zoom: { type: http, behavior: classical, path: ./Rules/Sanczzg/FrustratingJoyMaintain/Rules/Zoom.yaml, url: '示例', interval: 86400 }
-    China: { type: http, behavior: classical, path: ./Rules/DivineEngine/Profiles/RuleSet/China.yaml, url: '示例', interval: 86400 }
-    ChinaIP: { type: http, behavior: ipcidr, path: ./Rules/DivineEngine/Profiles/RuleSet/Extra/ChinaIP.yaml, url: '示例', interval: 86400 }
+  # 色情内容拦截，保护青少年身心健康。
+  Porn:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Porn.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Porn.yaml
+    interval: 10800
+  # 主要测速网站，用来测试网路速度。
+  SpeedTest:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/SpeedTest.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/SpeedTest.yaml
+    interval: 10800
+  # 微软服务
+  Microsoft:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Microsoft.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Microsoft.yaml
+    interval: 10800
+  # 电报吹水
+  Telegram:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Telegram.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Telegram.yaml
+    interval: 10800
+  # 谷歌统一推送
+  GoogleFCM:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/GoogleFCM.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/GoogleFCM.yaml
+    interval: 10800
+  # YouTube视频
+  YouTube:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/YouTube.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/YouTube.yaml
+    interval: 10800
+  # 谷歌服务
+  Google:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Google.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Google.yaml
+    interval: 10800
+  # 老鼠台直播
+  Twitch:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Twitch.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Twitch.yaml
+    interval: 10800
+  # bilibili港台地区番剧解锁
+  bilibili:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/BiliBiliHMT.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/BiliBiliHMT.yaml
+    interval: 10800
+  # 巴哈姆特动画疯
+  Bahamut:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Bahamut.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Bahamut.yaml
+    interval: 10800
+  # Emby视频使用US HK SG地区观看
+  Emby:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Emby.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Emby.yaml
+    interval: 10800
+  # 迪士尼视频
+  Disney+:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/DisneyPlus.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DisneyPlus.yaml
+    interval: 10800
+  # 声破天
+  Spotify:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Spotify.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Spotify.yaml
+    interval: 10800
+  # 菲律宾区HBO go
+  HBO:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/HBO.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml
+    interval: 10800
+  # 网飞流媒体
+  NETFLIX:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Netflix.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml
+    interval: 10800
+  # GFW黑名单代理
+  PROXY:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/ProxyGFWlist.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProxyGFWlist.yaml
+    interval: 10800
+  # 国内域名
+  Domestic:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/Domestic.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml
+    interval: 10800
+  # 国内IP段
+  DomesticIP:
+    type: http
+    behavior: ipcidr
+    path: ./Clash/master/RuleSet/DomesticIP.yaml
+    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DomesticIP.yaml
+    interval: 10800
+
 rules:
-    - 'RULE-SET,Unbreak,DIRECT'
-    - 'RULE-SET,Streaming,示例'
-    - 'RULE-SET,StreamingSE,StreamingSE'
-    - 'RULE-SET,Zoom,Zoom,no-resolve'
-    - 'RULE-SET,OneDrive,示例'
-    - 'RULE-SET,Global,示例'
-    - 'RULE-SET,China,DIRECT'
-    - 'IP-CIDR,192.168.0.0/16,DIRECT'
-    - 'IP-CIDR,10.0.0.0/8,DIRECT'
-    - 'IP-CIDR,172.16.0.0/12,DIRECT'
-    - 'IP-CIDR,127.0.0.0/8,DIRECT'
-    - 'IP-CIDR,100.64.0.0/10,DIRECT'
-    - 'IP-CIDR,224.0.0.0/4,DIRECT'
-    - 'RULE-SET,ChinaIP,DIRECT'
-    - 'MATCH,Final'
+  # 色情拦截
+  - RULE-SET,Porn,REJECT
+  # 网站测速
+  - RULE-SET,SpeedTest,SpeedTest
+  # 微软服务
+  - RULE-SET,Microsoft,Microsoft
+  # 电报吹水
+  - RULE-SET,Telegram,Telegram
+  # 谷歌统一推送
+  - RULE-SET,GoogleFCM,DIRECT
+  # 油管视频
+  - RULE-SET,YouTube,YouTube
+  # 谷歌服务
+  - RULE-SET,Google,Google
+  # 老鼠台直播
+  - RULE-SET,Twitch,Twitch
+  # 解锁港台番剧
+  - RULE-SET,bilibili,bilibili
+  # 巴哈姆特 动画疯
+  - RULE-SET,Bahamut,Bahamut
+  # Emby视频
+  - RULE-SET,Emby,Emby
+  # 迪士尼视频
+  - RULE-SET,Disney+,Disney+
+  # 声破天
+  - RULE-SET,Spotify,Spotify
+  # HBO
+  - RULE-SET,HBO,HBO
+  # 网飞视频
+  - RULE-SET,NETFLIX,NETFLIX
+  # 代理黑名单
+  - RULE-SET,PROXY,PROXY
+  # 国内域名直连
+  - RULE-SET,Domestic,DIRECT
+  # 国内IP直连
+  - RULE-SET,DomesticIP,DIRECT
+  # 中国IP直连
+  - GEOIP,CN,DIRECT
+  # 漏网之鱼，默认代理。
+  - MATCH,PROXY # PROXY or DIRECT
