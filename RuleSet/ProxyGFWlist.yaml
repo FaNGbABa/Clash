@@ -19,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,unsplash.com
   - DOMAIN-SUFFIX,xn--i2ru8q2qg.com
   - DOMAIN-SUFFIX,yunpanjingling.com
+  - DOMAIN-SUFFIX,cloud-wing.net
 
   # 国外域名
   - DOMAIN-SUFFIX,eu
