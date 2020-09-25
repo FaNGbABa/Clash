@@ -1,4 +1,4 @@
 payload:
   # 内容：APK直连
   # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProcessName.yaml
-  - PROCESS-NAME,gamer-cds.cdn.hinet.net
+  - PROCESS-NAME,com.tencent.mobileqq
