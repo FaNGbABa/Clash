@@ -16,7 +16,6 @@ payload:
   - PROCESS-NAME,com.tencent.gamehelper.smoba
   - PROCESS-NAME,com.bankcomm.Bankcomm
   - PROCESS-NAME,com.tencent.mm
-
   - PROCESS-NAME,com.cybernico.lygandroid
   - PROCESS-NAME,com.chinamworld.bocmbci
   - PROCESS-NAME,com.duowan.kiwi
@@ -26,7 +25,6 @@ payload:
   - PROCESS-NAME,com.coolapk.market
   - PROCESS-NAME,com.chinamworld.main
   - PROCESS-NAME,com.jingdong.app.mall
-
   - PROCESS-NAME,com.autonavi.minimap
   - PROCESS-NAME,com.baidu.netdisk
   - PROCESS-NAME,com.taobao.taobao
