@@ -1,16 +1,25 @@
 payload:
   # 内容：APK直连
   # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProcessName.yaml
+  # 手机QQ
   - PROCESS-NAME,com.tencent.mobileqq
+  # 一加天气
   - PROCESS-NAME,net.oneplus.weather
+  # 一加计算器
   - PROCESS-NAME,com.oneplus.calculator
+  # Boss直聘
   - PROCESS-NAME,com.hpbr.bosszhipin
+  # 一加卡券
   - PROCESS-NAME,com.oneplus.card
+  # 王者荣耀
   - PROCESS-NAME,com.tencent.tmgp.sgame
+  # 爱奇艺
   - PROCESS-NAME,com.qiyi.video
+  # 一加录音机
   - PROCESS-NAME,com.oneplus.soundrecorder
   - PROCESS-NAME,com.tmri.app.main
   - PROCESS-NAME,com.nowcasting.activity
+  # 美团
   - PROCESS-NAME,com.sankuai.meituan
   - PROCESS-NAME,com.sinovatech.unicom.ui
   - PROCESS-NAME,com.tencent.gamehelper.smoba
@@ -31,4 +40,7 @@ payload:
   - PROCESS-NAME,com.netease.cloudmusic
   - PROCESS-NAME,com.handsgo.jiakao.android
   - PROCESS-NAME,com.eg.android.AlipayGphone
+  - PROCESS-NAME,com.sup.android.superb
+  - PROCESS-NAME,com.ximalaya.ting.android
+  - PROCESS-NAME,com.sina.weibo
 
