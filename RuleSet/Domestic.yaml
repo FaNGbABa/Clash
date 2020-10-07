@@ -1,6 +1,49 @@
 payload:
   ## 🌏 Domestic
   # https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml
+    # 手机QQ
+  - PROCESS-NAME,com.tencent.mobileqq
+  # 一加天气
+  - PROCESS-NAME,net.oneplus.weather
+  # 一加计算器
+  - PROCESS-NAME,com.oneplus.calculator
+  # Boss直聘
+  - PROCESS-NAME,com.hpbr.bosszhipin
+  # 一加卡券
+  - PROCESS-NAME,com.oneplus.card
+  # 王者荣耀
+  - PROCESS-NAME,com.tencent.tmgp.sgame
+  # 爱奇艺
+  - PROCESS-NAME,com.qiyi.video
+  # 一加录音机
+  - PROCESS-NAME,com.oneplus.soundrecorder
+  - PROCESS-NAME,com.tmri.app.main
+  - PROCESS-NAME,com.nowcasting.activity
+  # 美团
+  - PROCESS-NAME,com.sankuai.meituan
+  - PROCESS-NAME,com.sinovatech.unicom.ui
+  - PROCESS-NAME,com.tencent.gamehelper.smoba
+  - PROCESS-NAME,com.bankcomm.Bankcomm
+  - PROCESS-NAME,com.tencent.mm
+  - PROCESS-NAME,com.cybernico.lygandroid
+  - PROCESS-NAME,com.chinamworld.bocmbci
+  - PROCESS-NAME,com.duowan.kiwi
+  - PROCESS-NAME,com.tencent.qqlive
+  - PROCESS-NAME,com.xunmeng.pinduoduo
+  - PROCESS-NAME,com.unionpay
+  - PROCESS-NAME,com.coolapk.market
+  - PROCESS-NAME,com.chinamworld.main
+  - PROCESS-NAME,com.jingdong.app.mall
+  - PROCESS-NAME,com.autonavi.minimap
+  - PROCESS-NAME,com.baidu.netdisk
+  - PROCESS-NAME,com.taobao.taobao
+  - PROCESS-NAME,com.netease.cloudmusic
+  - PROCESS-NAME,com.handsgo.jiakao.android
+  - PROCESS-NAME,com.eg.android.AlipayGphone
+  - PROCESS-NAME,com.sup.android.superb
+  - PROCESS-NAME,com.ximalaya.ting.android
+  - PROCESS-NAME,com.sina.weibo
+
   # MyList
   - DOMAIN-SUFFIX,423down.com
   - DOMAIN-SUFFIX,bokecc.com
