@@ -1,6 +1,8 @@
 payload:
   ## 🙈 Google
   # Url:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Google.yaml
+  # processname
+  - PROCESS-NAME,com.google.android.apps.maps
   ## > Google
   - DOMAIN-SUFFIX,0emm.com
   - DOMAIN-SUFFIX,1e100.net
