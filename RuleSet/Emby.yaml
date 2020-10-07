@@ -2,6 +2,3 @@ payload:
   # Emby 视频 待完善
   # Url:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Emby.yaml
   - PROCESS-NAME,com.mb.android
-  - DOMAIN-SUFFIX,xeton.dev
-  - DOMAIN-SUFFIX,movie.xeton.dev
-  - DOMAIN-SUFFIX,plus.xeton.dev
