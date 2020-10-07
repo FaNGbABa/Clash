@@ -1,6 +1,11 @@
 payload:
   ## > YouTube
   # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/YouTube.yaml
+  
+  # PROCESS NAME
+  - PROCESS-NAME,com.google.android.youtube
+  
+  # Rule start
   - DOMAIN-SUFFIX,ggpht.cn
   - DOMAIN-SUFFIX,ggpht.com
   - DOMAIN-SUFFIX,googlevideo.com
