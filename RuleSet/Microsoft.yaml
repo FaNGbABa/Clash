@@ -2,6 +2,7 @@ payload:
   # 内容：Microsoft
   # 数量：75条
   # Url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Microsoft.yaml
+  - PROCESS-NAME,com.microsoft.skydrive
   - DOMAIN-KEYWORD,1drv
   - DOMAIN-KEYWORD,microsoft
   - DOMAIN-SUFFIX,aadrm.com
