@@ -1,6 +1,10 @@
 payload:
   ## > HBO NOW & HBO GO HKG
   # Url:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml
+  - PROCESS-NAME,sg.hbo.hbogo
+  - PROCESS-NAME,ph.hbo.hbogo
+  - PROCESS-NAME,tw.hbo.hbogo
+  - PROCESS-NAME,hk.hbo.hbogo
   - DOMAIN-SUFFIX,hbo.com
   - DOMAIN-SUFFIX,hbogo.com
   - DOMAIN-SUFFIX,hbonow.com
