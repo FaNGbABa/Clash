@@ -1,6 +1,11 @@
 payload:
   ## > Netflix
   # Url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml
+  
+  # process name
+  - PROCESS-NAME,com.netflix.mediaclient
+  
+  # RULE
   - DOMAIN,netflix.com.edgesuite.net
   - DOMAIN-SUFFIX,fast.com
   - DOMAIN-SUFFIX,netflix.com
