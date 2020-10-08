@@ -2,7 +2,29 @@ payload:
   ## 🙈 Google
   # Url:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Google.yaml
   # processname
+  - PROCESS-NAME,com.google.android.gms
+  - PROCESS-NAME,com.google.android.gsf
+  - PROCESS-NAME,com.google.android.partnersetup
+  - PROCESS-NAME,com.google.android.keep
+  - PROCESS-NAME,com.google.android.play.games
   - PROCESS-NAME,com.google.android.apps.maps
+  - PROCESS-NAME,com.google.android.apps.walletnfcrel
+  - PROCESS-NAME,com.google.android.videos
+  - PROCESS-NAME,com.google.android.apps.photos
+  - PROCESS-NAME,com.google.android.calendar
+  - PROCESS-NAME,com.google.android.gms.location.history
+  - PROCESS-NAME,com.google.android.inputmethod.latin
+  - PROCESS-NAME,com.gsma.rcs
+  - PROCESS-NAME,com.android.hotwordenrollment.okgoogle
+  - PROCESS-NAME,com.android.vending
+  - PROCESS-NAME,com.google.android.apps.subscriptions.red
+  - PROCESS-NAME,com.google.android.apps.docs
+  - PROCESS-NAME,com.google.android.tts
+  - PROCESS-NAME,com.google.android.syncadapters.contacts
+  - PROCESS-NAME,com.google.android.music
+  - PROCESS-NAME,com.google.android.apps.tachyon
+  - PROCESS-NAME,com.google.ar.core
+  - PROCESS-NAME,com.android.hotwordenrollment.xgoogle
   ## > Google
   - DOMAIN-SUFFIX,0emm.com
   - DOMAIN-SUFFIX,1e100.net
