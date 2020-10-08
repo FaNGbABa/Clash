@@ -1,6 +1,7 @@
 payload:
   # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/SpeedTest.yaml
   ## > Speedtest by Ookla
+  - PROCESS-NAME,org.zwanoo.android.speedtest
   - DOMAIN-KEYWORD,ookla
   - DOMAIN-KEYWORD,speedtest
   - DOMAIN-SUFFIX,lg-hkg.fdcservers.net
