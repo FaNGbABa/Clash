@@ -1,70 +1,35 @@
-#---------------------------------------------------#
-# 配置文件需要放置在 $HOME/.config/clash/config.yml
-# 或者运行目录下的config.yml
-#---------------------------------------------------#
-
-# START
-
-# 混合端口 HTTP和SOCKS5用一个端口
 mixed-port: 8888
-
-# HTTP 代理端口
 port: 8889
-
-# SOCKS5 代理端口
 socks-port: 8890
-
-# 允许局域网的连接（可用来共享代理）
 allow-lan: true
-
-# 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
 mode: rule
-
-# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
-# 5 个级别：silent / error / warning / info / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
-log-level: info
-
-# Clash 的 RESTful API
-external-controller: '127.0.0.1:9090'
-
-# 实验性功能
-experimental:
-  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
-  
+log-level: debug
+# external-controller: 127.0.0.1:9090
+# experimental:
+#   ignore-resolve-fail: true
 dns:
-  enable: true # 是否启用dns false
-  ipv6: false
+  enable: true
+#   ipv6: false
   listen: 0.0.0.0:53
-  default-nameserver:
-    - 119.29.29.29
-    - 192.168.2.1
-    - 233.5.5.5
-    - 180.76.76.76
-  enhanced-mode: fake-ip # 模式：redir-host或fake-ip
-  fake-ip-range: 198.18.0.1/16 #
-  fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
-     - '*.lan'
-     - localhost.ptlogin2.qq.com
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
   nameserver:
-     - 223.5.5.5 # 阿里DNS
-     - 180.76.76.76 # 百度DNS
-     - 119.29.29.29 # 腾讯DNS
-     - 192.168.2.1 #网关路由
-     - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+    - 117.50.10.10
+    - tls://dns.alidns.com
+    - https://doh.360.cn/dns-query
   fallback:
-     - 8.8.8.8 # 谷歌DNS
-     - 1.1.1.1 # Cloudflare DNS
-     - https://dns.google/dns-query
-     - https://cloudflare-dns.com/dns-query
+    - tls://dns.google:53
+    - tls://dns.rubyfish.cn:53
+    - https://dns.google/dns-query
+    - https://dns.rubyfish.cn/dns-query
+    - https://cloudflare-dns.com/dns-query
   fallback-filter:
-     geoip: true # 默认
-     ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
-       - 240.0.0.0/4
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
 cfw-latency-timeout: 360
 cfw-latency-url: https://cp.cloudflare.com/generate_204
-
 cfw-bypass-bak:
-  # 原有字段不用删除
   - qq.com
   - 'music.163.com' # 网易云域名1
   - '*.music.126.net' # 网易云域名2
