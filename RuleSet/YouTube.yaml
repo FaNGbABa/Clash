@@ -4,6 +4,7 @@ payload:
   
   # PROCESS NAME
   - PROCESS-NAME,com.google.android.youtube
+  - PROCESS-NAME,com.google.android.apps.youtube.music
   
   # Rule start
   - DOMAIN-SUFFIX,ggpht.cn
