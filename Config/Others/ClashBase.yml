@@ -10,26 +10,45 @@ log-level: info
 dns:
   enable: true
 #   ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - 'msftconnecttest.com'
+    - '*.msftconnecttest.com'
+    - 'msftncsi.com'
+    - '*.msftncsi.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - 'lens.l.google.com'
+    - 'stun.l.google.com'
+    - '*.n.n.srv.nintendo.net'
+    - '.apple.*'
+    - '+.foo.com'
+    - 'xnotify.xboxlive.com'
   nameserver:
     - '117.50.10.10'
     - '101.6.6.6'
     - '202.102.128.68'
     - '202.102.152.3'
     - '119.29.29.29'
-    - 'tls://dns.alidns.com:53'
+    - 'tls://dns.alidns.com:853'
   fallback:
-    - 'tls://dns.google:53'
-    - 'tls://dns.rubyfish.cn:53'
+    - 'tls://dns.google:853'
+    - 'tls://dns.rubyfish.cn:853'
     - 'https://dns.google/dns-query'
     - 'https://dns.rubyfish.cn/dns-query'
     - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.nextdns.io/6a749e'
-    - 'tls://6a749e.dns.nextdns.io:53'
-    - 'tls://dns.adguard.com:53'
+    - 'tls://6a749e.dns.nextdns.io:853'
+    - 'tls://dns.adguard.com:853'
   fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
