@@ -26,6 +26,9 @@ dns:
     - https://dns.google/dns-query
     - https://dns.rubyfish.cn/dns-query
     - https://cloudflare-dns.com/dns-query
+    - https://dns.nextdns.io/6a749e
+    - tls://6a749e.dns.nextdns.io
+    - tls://dns.adguard.com
   fallback-filter:
     geoip: true
     ipcidr:
