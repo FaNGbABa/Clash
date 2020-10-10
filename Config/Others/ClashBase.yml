@@ -15,8 +15,11 @@ dns:
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - 117.50.10.10
+    - 101.6.6.6
+    - 202.102.128.68
+    - 202.102.152.3
+    - 119.29.29.29
     - tls://dns.alidns.com
-    - https://doh.360.cn/dns-query
   fallback:
     - tls://dns.google:53
     - tls://dns.rubyfish.cn:53
