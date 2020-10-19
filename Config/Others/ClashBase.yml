@@ -35,13 +35,9 @@ dns:
     - 'tls://dns.alidns.com:853'
   fallback:
     - 'tls://dns.google:853'
-    - 'tls://dns.rubyfish.cn:853'
     - 'https://dns.google/dns-query'
     - 'https://dns.rubyfish.cn/dns-query'
     - 'https://cloudflare-dns.com/dns-query'
-    - 'https://dns.nextdns.io/6a749e'
-    - 'tls://6a749e.dns.nextdns.io:853'
-    - 'tls://dns.adguard.com:853'
   fallback-filter:
     geoip: true
     ipcidr:
