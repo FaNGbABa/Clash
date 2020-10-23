@@ -15,8 +15,7 @@ Spotify,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Spotify.
 HBO,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml,10800
 NETFLIX,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml,10800
 Default,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProxyGFWlist.yaml,10800
-DIRECT,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml,10800
-DIRECT,clash-ipcidr:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DomesticIP.yaml,10800
+DIRECT,[]GEOIP,CN
 HK,[]GEOIP,HK
 TW,[]GEOIP,TW
 US,[]GEOIP,US
