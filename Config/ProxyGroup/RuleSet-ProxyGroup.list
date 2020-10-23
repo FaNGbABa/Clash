@@ -1,24 +1,14 @@
-PROXY`select`[]Fallback`[]Url-Test`[]Load-Balance`[]DIRECT
+Default`select`[]US`.*
 SpeedTest`select`.*
-Microsoft`fallback`[]HK`[]DIRECT`https://cp.cloudflare.com/generate_204`180
-Twitch`fallback`[]JP`[]DIRECT`https://cp.cloudflare.com/generate_204`180
-bilibili`select`[]TW`[]HK`[]DIRECT
-Bahamut`select`[]TW`[]HK`[]DIRECT
-Telegram`select`[]Url-Test`[]DIRECT
-Google`select`[]US`[]Manual`[]DIRECT
-YouTube`select`[]Google`[]Load-Balance
+bilibili`select`[]DIRECT`[]TW`[]HK
+Google`select`[]US`.*
+YouTube`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)
 Spotify`fallback`[]US`[]HK`[]DIRECT`https://cp.cloudflare.com/generate_204`180
-Emby`select`[]TW`[]HK`[]DIRECT
-Disney+`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)`[]DIRECT
-HBO`select`[]PH`[]DIRECT
-NETFLIX`select`[]SG`[]TW`[]US`[]HK`[]DIRECT
-Default`select`[]DIRECT`[]PROXY
-Fallback`fallback`(香港|HK|HongKong|Hong Kong|HKT|HKBN|HGC|WTT|LeaseWeb|ZenLayer|CMI|港(?!转|回))`https://cp.cloudflare.com/generate_204`180
-Url-Test`url-test`.*`[]REJECT`https://cp.cloudflare.com/generate_204`180,,30
-Load-Balance`load-balance`(.*港|台.*)`https://cp.cloudflare.com/generate_204`180
+Disney+`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)
+HBO`select`[]SG
+NETFLIX`select`[]SG`[]TW`[]US`[]HK
 HK`fallback`(香港|HK|HongKong|Hong Kong|HKT|HKBN|HGC|WTT|LeaseWeb|ZenLayer|CMI|港(?!转|回))`https://cp.cloudflare.com/generate_204`180
 TW`select`(台.*(?!转)|台北|台中|新北|台湾|TW|Taiwan|CHT|HiNet|台)
 JP`fallback`(JP|Japan|日.*(?!转)|东京|大阪|埼玉|沪日|穗日|川日|中日|泉日|日)`https://cp.cloudflare.com/generate_204`180
 US`fallback`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)`https://cp.cloudflare.com/generate_204`180
-SG`fallback`(SG|Singapore|新.*(?!转)|狮城|沪新|京新|泉新|穗新|深新|新)`https://cp.cloudflare.com/generate_204`180
-PH`fallback`(PH|Philippines|菲律宾|菲)`https://cp.cloudflare.com/generate_204`180
+SG`fallback`(狮城)`https://cp.cloudflare.com/generate_204`180
