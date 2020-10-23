@@ -16,6 +16,6 @@ HBO,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml,108
 NETFLIX,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml,10800
 Default,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProxyGFWlist.yaml,10800
 DIRECT,clash-classic:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml,10800
-DIRECT,clash-ipcidr:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DomesticIp.yaml,10800
+DIRECT,clash-ipcidr:https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DomesticIP.yaml,10800
 DIRECT,[]GEOIP,CN
-Default,[]MATCH
+DIRECT,[]MATCH
