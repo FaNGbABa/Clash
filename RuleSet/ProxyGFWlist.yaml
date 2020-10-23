@@ -41,6 +41,7 @@ payload:
   - DOMAIN-SUFFIX,xn--i2ru8q2qg.com
   - DOMAIN-SUFFIX,yunpanjingling.com
   - DOMAIN-SUFFIX,cloud-wing.net
+  - DOMAIN-KEYWORD,bywave
 
   # 国外域名
   - DOMAIN-SUFFIX,eu
