@@ -41,6 +41,9 @@ payload:
   - DOMAIN-SUFFIX,xn--i2ru8q2qg.com
   - DOMAIN-SUFFIX,yunpanjingling.com
   - DOMAIN-SUFFIX,cloud-wing.net
+  - DOMAIN-SUFFIX,ip.skk.moe
+  - DOMAIN-SUFFIX,ip.sb
+  - DOMAIN-SUFFIX,skk.moe
   - DOMAIN-KEYWORD,bywave
 
   # 国外域名
