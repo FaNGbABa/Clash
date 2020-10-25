@@ -44,6 +44,8 @@ payload:
   - DOMAIN-SUFFIX,ip.skk.moe
   - DOMAIN-SUFFIX,ip.sb
   - DOMAIN-SUFFIX,skk.moe
+  - DOMAIN-SUFFIX,subcon.dlj.tf
+  - DOMAIN-SUFFIX,suo,yt
   - DOMAIN-KEYWORD,bywave
 
   # 国外域名
