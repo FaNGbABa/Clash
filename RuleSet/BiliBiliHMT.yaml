@@ -2,6 +2,7 @@ payload:
   ## 📺 哔哩哔哩番剧
   # https://git.dler.io/FaNGbABa/Clash/master/RuleSet/BiliBiliHMT.yaml
   ## > Bilibili
+  - PROCESS-NAME,tv.danmaku.bili
   - DOMAIN-SUFFIX,acg.tv
   - DOMAIN-SUFFIX,acgvideo.com
   - DOMAIN-SUFFIX,b23.tv
