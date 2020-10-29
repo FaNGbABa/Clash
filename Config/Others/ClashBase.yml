@@ -34,10 +34,12 @@ dns:
     - '119.29.29.29'
     - 'tls://dns.alidns.com:853'
   fallback:
+    - '208.67.222.222'
     - 'tls://dns.google:853'
+    - 'tls://dns.sb:853'
+    - 'https://dns.sb/dns-query'
     - 'https://dns.google/dns-query'
-    - 'https://dns.rubyfish.cn/dns-query'
-    - 'https://cloudflare-dns.com/dns-query'
+    - '1.1.1.1'
   fallback-filter:
     geoip: true
     ipcidr:
