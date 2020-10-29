@@ -1,15 +1,18 @@
-Default`select`[]AUTO`.*
+Default`select`.*
 SpeedTest`select`.*
-bilibili`select`[]DIRECT`[]TW`[]HK
-Google`select`[]US`.*
-YouTube`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)
-Spotify`fallback`[]US`[]HK`[]DIRECT`https://cp.cloudflare.com/generate_204`180
+bilibili`select`[]DIRECT`(台|港)
+Google`select`.*
+YouTube`select`(美国)
+Spotify`select`.*
 Disney+`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)
-HBO`select`[]SG
-NETFLIX`select`[]SG`[]TW`[]US`[]HK
-AUTO`fallback`[]US`[]HK`[]SG`[]JP`https://cp.cloudflare.com/generate_204`180
-HK`fallback`(香港)`https://cp.cloudflare.com/generate_204`180
-TW`select`(台.*(?!转)|台北|台中|新北|台湾|TW|Taiwan|CHT|HiNet|台)
-JP`fallback`(JP|Japan|日.*(?!转)|东京|大阪|埼玉|沪日|穗日|川日|中日|泉日|日)`https://cp.cloudflare.com/generate_204`180
-US`fallback`(美国丨)`https://cp.cloudflare.com/generate_204`180
-SG`fallback`(狮城)`https://cp.cloudflare.com/generate_204`180
+HBO`select`(新加坡|狮城|台湾|港|美国)
+NETFLIX`select`(狮城|新加坡|台湾|港|美国|NF)
+Telegram`select`(狮城|新加坡|港)
+GoogleFCM`select`[]DIRECT`[]Default
+Twitch`select`(日本)
+Microsoft`select`(港)
+Bahamut`select`(台湾)
+EMBY`select`(港)
+PORN`select`[]REJECT
+ADBLOCK`select`[]REJECT`[]DIRECT
+MATCH`select`[]DIRECT`[]Default
