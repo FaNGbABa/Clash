@@ -1,0 +1,8 @@
+# 内容：Wild Rift
+# 数量：4条
+DOMAIN-SUFFIX,riotcdn.net
+DOMAIN-SUFFIX,wr.pvp.net
+DOMAIN-SUFFIX,riotgames.com
+# 兜底
+PROCESS-NAME,com.riotgames.league.wildrift
+
