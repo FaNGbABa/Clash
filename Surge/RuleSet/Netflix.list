@@ -1,5 +1,6 @@
   ## > Netflix
   # RULE
+USER-AGENT,Argo*
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,netflix.com
