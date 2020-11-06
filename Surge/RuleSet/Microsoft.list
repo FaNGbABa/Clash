@@ -201,8 +201,6 @@ DOMAIN-SUFFIX,msnewskids.org
 DOMAIN-SUFFIX,msnkids.com
 DOMAIN-SUFFIX,winmp.cn
   ## >> Onedrive
-PROCESS-NAME,OneDrive
-PROCESS-NAME,OneDriveUpdater
 USER-AGENT,OneDrive*
 USER-AGENT,OneDriveiOSApp*
 DOMAIN-KEYWORD,1drv
