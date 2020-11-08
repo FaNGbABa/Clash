@@ -190,7 +190,7 @@ payload:
   - DOMAIN-SUFFIX,microsoftnewskids.org
   - DOMAIN-SUFFIX,microsoftol.com
   - DOMAIN-SUFFIX,microsoftol.com.cn
-  - DOMAIN-SUFFIX,microsoftusercontent.com
+  - DOMAIN-SUFFIX,microsoft# USERcontent.com
   - DOMAIN-SUFFIX,msn.cn
   - DOMAIN-SUFFIX,msn.com
   - DOMAIN-SUFFIX,msn.com.cn
@@ -202,8 +202,8 @@ payload:
   - DOMAIN-SUFFIX,msnkids.com
   - DOMAIN-SUFFIX,winmp.cn
   ## >> Onedrive
-USER-AGENT,OneDrive*
-USER-AGENT,OneDriveiOSApp*
+# USER-AGENT,OneDrive*
+# USER-AGENT,OneDriveiOSApp*
   - DOMAIN-KEYWORD,1drv
   - DOMAIN-KEYWORD,onedrive
   - DOMAIN-KEYWORD,skydrive
@@ -558,8 +558,8 @@ USER-AGENT,OneDriveiOSApp*
   - DOMAIN-SUFFIX,trafficmanager.net
   - DOMAIN-SUFFIX,translatetheweb.com
   - DOMAIN-SUFFIX,unlocklimitlesslearning.com
-  - DOMAIN-SUFFIX,userpxt.io
-  - DOMAIN-SUFFIX,uservoice.com
+  - DOMAIN-SUFFIX,# USERpxt.io
+  - DOMAIN-SUFFIX,# USERvoice.com
   - DOMAIN-SUFFIX,videobreakdown.com
   - DOMAIN-SUFFIX,videoindexer.ai
   - DOMAIN-SUFFIX,virtualearth.net
@@ -582,7 +582,7 @@ USER-AGENT,OneDriveiOSApp*
   - DOMAIN-SUFFIX,winhec.com
   - DOMAIN-SUFFIX,winhec.net
   - DOMAIN-SUFFIX,yammer.com
-  - DOMAIN-SUFFIX,yammerusercontent.com
+  - DOMAIN-SUFFIX,yammer# USERcontent.com
   - DOMAIN-SUFFIX,g.akamaiedge.net
   - DOMAIN-SUFFIX,a1158.g.akamai.net
   - DOMAIN-SUFFIX,a122.dscg3.akamai.net
