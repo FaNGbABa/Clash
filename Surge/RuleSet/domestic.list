@@ -1,5 +1,6 @@
 payload:
   # Domestic
+  - DOMAIN,wht.im
   - DOMAIN-KEYWORD,1plus
   #- DOMAIN-SUFFIX,
   #- DOMAIN-SUFFIX,
