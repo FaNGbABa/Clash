@@ -1,423 +1,274 @@
-mixed-port: 8888
-port: 8889
+port: 8888
 socks-port: 8890
 allow-lan: true
-mode: rule
+mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 experimental:
-  ignore-resolve-fail: true
+    ignore-resolve-fail: true
 dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  default-nameserver:
-    - 119.29.29.29
-    - 192.168.2.1
-    - 233.5.5.5
-    - 180.76.76.76
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - "*.lan"
-    - localhost.ptlogin2.qq.com
-  nameserver:
-    - 223.5.5.5
-    - 180.76.76.76
-    - 119.29.29.29
-    - 192.168.2.1
-    - https://dns.alidns.com/dns-query
-  fallback:
-    - 8.8.8.8
-    - 1.1.1.1
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-  fallback-filter:
+    enable: true
+    listen: 127.0.0.1:1053
+    default-nameserver:
+      - 223.5.5.5
+      - 114.114.114.114
+      - 1.2.4.8
+    ipv6: false
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.10.0.1/16
+    fake-ip-filter:
+      - '*.lan'
+      - 'stun.*.*.*'
+      - 'stun.*.*'
+      - 'time.windows.com'
+      - 'time.nist.gov'
+      - '*.ntp.org.cn'
+      - '*.openwrt.pool.ntp.org'
+      - 'time1.cloud.tencent.com'
+      - 'time.ustc.edu.cn'
+      - 'pool.ntp.org'
+      - 'ntp.ubuntu.com'
+      - '*.aliyun.com'
+      - '*.time.edu.cn'
+      - '.apple.*'
+      - 'lens.l.google.com'
+      - 'stun.l.google.com'
+      - '*.music.163.com'
+      - '*.126.net'
+      - '*.kuwo.cn'
+      - '*.y.qq.com'
+      - '*.xiami.com'
+      - '*.music.migu.cn'
+      - '*.msftconnecttest.com'
+      - '*.msftncsi.com'
+      - 'localhost.ptlogin2.qq.com'
+      - '*.*.*.srv.nintendo.net'
+      - '*.*.stun.playstation.net'
+      - 'xbox.*.*.microsoft.com'
+      - '*.*.xboxlive.com'
+    nameserver:
+      - 119.29.29.29
+      - 223.5.5.5
+      - 'https://dns.alidns.com/dns-query'
+    fallback:
+      - 'https://dns.google/dns-query'
+      - 'https://dns.sb/dns-query'
+      - 'tls://dns.google:853'
+      - 'tls://dns.sb:853'
+    fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-proxies:
-# - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
-# - {name: 解锁网易云灰色歌曲(在线), type: http, server: 106.15.250.108, port: 30000, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
+      - 0.0.0.0/32
+      - 127.0.0.1/32
 proxy-providers:
-  All-Sub: # 所有节点
+  Bywave:
     type: http 
-    path: ./providers/All-Sub.yaml
-    url: https://suo.yt/ # Node list
+    path: ./providers/Bywave.yaml
+    url: https://suo.yt/xxxxx
     interval: 10800
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  HK: # 香港节点
+  Miaona!:
     type: http
-    path: ./providers/HK.yaml
-    url: https://suo.yt/
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  JP: # 日本节点
-    type: http
-    path: ./providers/JP.yaml
-    url: https://suo.yt/
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  US: # 美国节点
-    type: http
-    path: ./providers/US.yaml
-    url: https://suo.yt/
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  TW: # 台湾节点
-    type: http
-    path: ./providers/TW.yaml
-    url: https://suo.yt/
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  SG: # 狮城节点
-    type: http
-    path: ./providers/SG.yaml
-    url: https://suo.yt/
-    interval: 10800
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  PH: # 菲律宾节点
-    type: http
-    path: ./providers/PH.yaml
-    url: https://suo.yt/
+    path: ./providers/Miaona.yaml
+    url: https://suo.yt/xxxxx
     interval: 10800
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
 proxy-groups:
-  - name: PROXY # 网站代理
-    type: select
-    # use:
-    #  - All-Sub 
-    proxies:
-      - Fallback
-      - Url-Test
-      - Load-Balance
-      - Manual
-      - DIRECT 
-  - name: Manual # 手动选择组
+  - name: PROXY
     type: select
     use:
-      - All-Sub
-  - name: SpeedTest # 速度测试
+      - Bywave
+      - Miaona!
+  - name: bilibili
     type: select
     use:
-      - All-Sub
-  - name: Microsoft # 微软服务
-    type: fallback
-    url: https://cp.cloudflare.com/generate_204
-    interval: 180
+      - Bywave
+      - Miaona!
     proxies:
-      - HK
       - DIRECT
-  - name: Twitch # 老鼠台直播
-    type: fallback
-    url: https://cp.cloudflare.com/generate_204
-    interval: 180
-    proxies:
-      - JP
-      - DIRECT
-  - name: bilibili # 港台番剧
-    type: select
-    proxies:
-      - TW
-      - HK
-      - DIRECT
-  - name: Bahamut # 巴哈姆特 动画疯
-    type: select
-    proxies:
-      - TW
-      - HK
-      - DIRECT
-  - name: Telegram # 电报吹水
-    type: select
-    proxies:
-      - Url-Test
-      - DIRECT
-  - name: Google # 谷歌服务
-    type: select
-    proxies:
-      - US
-      - Manual
-      - DIRECT
-  - name: YouTube # 油管视频
-    type: select
-    proxies:
-      - Google
-      - Load-Balance
-  - name: Spotify # 声破天
-    type: fallback
-    url: https://cp.cloudflare.com/generate_204
-    interval: 180
-    proxies:
-      - US
-      - HK
-      - DIRECT
-  - name: Emby # Emby体验服 仅限US SG HK地区
-    type: select
-    proxies:
-      - HK
-      - SG
-      - US
-      - DIRECT
-  - name: Disney+ # 迪士尼视频
+  - name: Google
     type: select
     use:
-      - US
-  - name: HBO # HBO
-    type: select
-    proxies:
-      - PH
-      - DIRECT
-  - name: NETFLIX # 网飞视频
-    type: select
-    proxies:
-      - SG
-      - TW
-      - US
-      - HK
-      - DIRECT
-  # 自动选择组
-  - name: Fallback # 故障转移
-    type: fallback
-    use:
-      - HK
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: Load-Balance # 负载均衡
-    type: load-balance
-    use:
-      - HK
-      - TW
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: Url-Test # 延迟最低
-    type: url-test
-    use:
-      - All-Sub
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 30
-# 按国家分组
-  - name: HK # 香港节点
-    type: fallback
-    use:
-      - HK
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: TW # 台湾节点
+      - Bywave
+      - Miaona!
+  - name: TELEGRAM
     type: select
     use:
-      - TW
-  - name: JP # 日本节点
-    type: fallback
+      - Bywave
+      - Miaona!
+  - name: HBO GO
+    type: select
     use:
-      - JP
-    url: http://www.gstatic.com/generate_204
-    interval: 300 
-  - name: US # 美国节点
-    type: fallback
+      - Bywave
+      - Miaona!
+  - name: NETFLIX
+    type: select
     use:
-      - US
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: SG # 狮城节点
-    type: fallback
+      - Bywave
+      - Miaona!
+  - name: GlobalMedia
+    type: select
     use:
-      - SG
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: PH # 菲律宾节点
-    type: fallback
-    use:
-      - PH
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+      - Bywave
+      - Miaona!
 rule-providers:
-  # 色情内容拦截，保护青少年身心健康。
   Porn:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/Porn.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Porn.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Porn.list"
     interval: 10800
-  # 主要测速网站，用来测试网路速度。
-  SpeedTest:
+  REJECT:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: .Clash/master/RuleSet/reject.yaml
+    interval: 10800
+  HIJACK:
     type: http
     behavior: classical
-    path: ./Clash/master/RuleSet/SpeedTest.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/SpeedTest.yaml
+    path: ./Clash/master/RuleSet/Hijack.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Hijack.list"
     interval: 10800
-  # 微软服务
   Microsoft:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/Microsoft.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Microsoft.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Microsoft.list"
     interval: 10800
-  # 电报吹水
-  Telegram:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/Telegram.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Telegram.yaml
-    interval: 10800
-  # 谷歌统一推送
   GoogleFCM:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/GoogleFCM.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/GoogleFCM.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/GoogleFCM.list"
     interval: 10800
-  # YouTube视频
-  YouTube:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/YouTube.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/YouTube.yaml
-    interval: 10800
-  # 谷歌服务
   Google:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/Google.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Google.yaml
+    url: "https://git.dler.io/Loyalsoldier/clash-rules/release/google.txt"
+  #  url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Google.list"
     interval: 10800
-  # 老鼠台直播
-  Twitch:
+  Google-supplement:
     type: http
     behavior: classical
-    path: ./Clash/master/RuleSet/Twitch.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Twitch.yaml
+    path: ./Clash/master/RuleSet/Google-supplement.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Google.list"
     interval: 10800
-  # bilibili港台地区番剧解锁
   bilibili:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/BiliBiliHMT.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/BiliBiliHMT.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/BiliBiliHMT.list"
     interval: 10800
-  # 巴哈姆特动画疯
-  Bahamut:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/Bahamut.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Bahamut.yaml
-    interval: 10800
-  # Emby视频使用US HK SG地区观看
-  Emby:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/Emby.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Emby.yaml
-    interval: 10800
-  # 迪士尼视频
-  Disney+:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/DisneyPlus.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DisneyPlus.yaml
-    interval: 10800
-  # 声破天
-  Spotify:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/Spotify.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Spotify.yaml
-    interval: 10800
-  # 菲律宾区HBO go
-  HBO:
+  HBO GO:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/HBO.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/HBO.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/HBO.list"
     interval: 10800
-  # 网飞流媒体
   NETFLIX:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/Netflix.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Netflix.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Netflix.list"
     interval: 10800
-  # GFW黑名单代理
   PROXY:
     type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/ProxyGFWlist.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/ProxyGFWlist.yaml
+    behavior: domain
+    path: ./Clash/master/RuleSet/GFW.yaml
+    url: "https://git.dler.io/Loyalsoldier/clash-rules/release/gfw.txt"
+  #  url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/ProxyGFWlist.list"
     interval: 10800
-  # 国内域名
-  Domestic:
+  CNcidr:
+    type: http
+    behavior: domain
+    path: ./Clash/master/RuleSet/CNcidr.yaml
+    url: "https://git.dler.io/Loyalsoldier/clash-rules/release/cncidr.txt"
+    interval: 10800
+  CNip:
+    type: http
+    behavior: domain
+    path: ./Clash/master/RuleSet/CNip.yaml
+    url: "https://git.dler.io/Loyalsoldier/clash-rules/release/direct.txt"
+    interval: 10800
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: .Clash/master/RuleSet/icloud.yaml
+    interval: 10800
+  Apple:
     type: http
     behavior: classical
-    path: ./Clash/master/RuleSet/Domestic.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Domestic.yaml
+    path: ./Clash/master/RuleSet/Apple.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Apple.list"
     interval: 10800
-  # 国内IP段
-  DomesticIP:
+  GlobalMedia:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/GlobalMedia.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/GlobalMedia.list"
+    interval: 10800
+  TELEGRAM:
+    type: http
+    behavior: classical
+    path: ./Clash/master/RuleSet/TELEGRAM.yaml
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/Telegram.list"
+    interval: 10800
+  GREATFIRE:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    path: .Clash/master/RuleSet/greatfire.yaml
+    interval: 10800
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    path: .Clash/master/RuleSet/tld-not-cn.yaml
+    interval: 10800
+  lancidr:
     type: http
     behavior: ipcidr
-    path: ./Clash/master/RuleSet/DomesticIP.yaml
-    url: https://git.dler.io/FaNGbABa/Clash/master/RuleSet/DomesticIP.yaml
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: .Clash/master/ruleset/lancidr.yaml
     interval: 10800
-
+  DOMESTIC:
+    type: http
+    behavior: classical
+    url: "https://git.dler.io/FaNGbABa/Clash/master/Surge/RuleSet/domestic.list"
+    path: .Clash/master/RuleSet/domestic.yaml
+    interval: 10800
 rules:
-  # 色情拦截
   - RULE-SET,Porn,REJECT
-  # 网站测速
-  - RULE-SET,SpeedTest,SpeedTest
-  # 微软服务
-  - RULE-SET,Microsoft,Microsoft
-  # 电报吹水
-  - RULE-SET,Telegram,Telegram
-  # 谷歌统一推送
+  - RULE-SET,HIJACK,REJECT
+  - RULE-SET,REJECT,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,Microsoft,DIRECT
+  - RULE-SET,TELEGRAM,TELEGRAM
   - RULE-SET,GoogleFCM,DIRECT
-  # 油管视频
-  - RULE-SET,YouTube,YouTube
-  # 谷歌服务
-  - RULE-SET,Google,Google
-  # 老鼠台直播
-  - RULE-SET,Twitch,Twitch
-  # 解锁港台番剧
+  - RULE-SET,Google,Google,force-remote-dns
+  - RULE-SET,Google-supplement,Google,force-remote-dns
   - RULE-SET,bilibili,bilibili
-  # 巴哈姆特 动画疯
-  - RULE-SET,Bahamut,Bahamut
-  # Emby视频
-  - RULE-SET,Emby,Emby
-  # 迪士尼视频
-  - RULE-SET,Disney+,Disney+
-  # 声破天
-  - RULE-SET,Spotify,Spotify
-  # HBO
-  - RULE-SET,HBO,HBO
-  # 网飞视频
+  - RULE-SET,HBO GO,HBO GO
   - RULE-SET,NETFLIX,NETFLIX
-  # 代理黑名单
+  - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,PROXY,PROXY
-  # 国内域名直连
-  - RULE-SET,Domestic,DIRECT
-  # 国内IP直连
-  - RULE-SET,DomesticIP,DIRECT
-  # 中国IP直连
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,GREATFIRE,PROXY
+  - RULE-SET,DOMESTIC,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,CNcidr,DIRECT,no-resolve
+  - RULE-SET,CNip,DIRECT,no-resolve
+  - GEOIP,,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
-  # 漏网之鱼，默认代理。
-  - MATCH,PROXY # PROXY or DIRECT
+  - MATCH,,PROXY,dns-failed
