@@ -1,7 +1,7 @@
 payload:
   # 内容：Netflix
   # 数量：40条
-  - USER-AGENT,Argo*
+  # - USER-AGENT,Argo*
   - PROCESS-NAME,com.netflix.mediaclient
   - DOMAIN,netflix.com.edgesuite.net
   - DOMAIN-SUFFIX,fast.com
