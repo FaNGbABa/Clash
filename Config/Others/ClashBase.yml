@@ -1,46 +1,63 @@
-mixed-port: 8888
-port: 8889
+port: 8888
 socks-port: 8890
-allow-lan: true
-mode: rule
+allow-lan: false
+mode: Rule
 log-level: info
+external-controller: 127.0.0.1:9090
+experimental:
+    ignore-resolve-fail: true
 dns:
-  enable: true
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - 'msftconnecttest.com'
-    - '*.msftconnecttest.com'
-    - 'msftncsi.com'
-    - '*.msftncsi.com'
-    - 'localhost.ptlogin2.qq.com'
-    - 'localhost.sec.qq.com'
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*.*.*'
-    - 'lens.l.google.com'
-    - 'stun.l.google.com'
-    - '*.n.n.srv.nintendo.net'
-    - '.apple.*'
-    - '+.foo.com'
-    - 'xnotify.xboxlive.com'
-  nameserver:
-    - '117.50.10.10'
-    - '101.6.6.6'
-    - '202.102.128.68'
-    - '202.102.152.3'
-    - '119.29.29.29'
-    - 'tls://dns.alidns.com:853'
-  fallback:
-    - '208.67.222.222'
-    - 'tls://dns.google:853'
-    - 'tls://dns.sb:853'
-    - 'https://dns.sb/dns-query'
-    - 'https://dns.google/dns-query'
-    - '1.1.1.1'
-  fallback-filter:
+    enable: true
+    listen: 127.0.0.1:1053
+    default-nameserver:
+      - 223.5.5.5
+      - 114.114.114.114
+      - 1.2.4.8
+      - 123.206.21.48
+      - 202.102.128.68
+    ipv6: false
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.10.0.1/16
+    fake-ip-filter:
+      - '*.lan'
+      - 'stun.*.*.*'
+      - 'stun.*.*'
+      - 'time.windows.com'
+      - 'time.nist.gov'
+      - '*.ntp.org.cn'
+      - '*.openwrt.pool.ntp.org'
+      - 'time1.cloud.tencent.com'
+      - 'time.ustc.edu.cn'
+      - 'pool.ntp.org'
+      - 'ntp.ubuntu.com'
+      - '*.aliyun.com'
+      - '*.time.edu.cn'
+      - '.apple.*'
+      - 'lens.l.google.com'
+      - 'stun.l.google.com'
+      - '*.music.163.com'
+      - '*.126.net'
+      - '*.kuwo.cn'
+      - '*.y.qq.com'
+      - '*.xiami.com'
+      - '*.music.migu.cn'
+      - '*.msftconnecttest.com'
+      - '*.msftncsi.com'
+      - 'localhost.ptlogin2.qq.com'
+      - '*.*.*.srv.nintendo.net'
+      - '*.*.stun.playstation.net'
+      - 'xbox.*.*.microsoft.com'
+      - '*.*.xboxlive.com'
+    nameserver:
+      - 119.29.29.29
+      - 223.5.5.5
+      - 'https://dns.alidns.com/dns-query'
+    fallback:
+      - 'https://dns.google/dns-query'
+      - 'https://dns.sb/dns-query'
+      - 'tls://dns.google:853'
+      - 'tls://dns.sb:853'
+    fallback-filter:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
