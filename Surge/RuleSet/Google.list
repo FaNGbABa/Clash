@@ -1,5 +1,6 @@
 payload:
-  - DOMAIN,ip.sb
+  - DOMAIN-SUFFIX,ipv4.ip.sb
+  - DOMAIN-SUFFIX,ip.sb
   - DOMAIN-SUFFIX,0emm.com
   - DOMAIN-SUFFIX,1e100.net
   - DOMAIN-SUFFIX,1ucrs.com
