@@ -1,6 +1,6 @@
 port: 8888
 socks-port: 8890
-allow-lan: true
+allow-lan: false
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
@@ -82,17 +82,28 @@ proxy-providers:
       enable: true
       url: "http://www.gstatic.com/generate_204"
       interval: 300
+  Cloud-Wing:
+    type: http
+    path: ./providers/Cloud-Wing.yaml
+    url: ""
+    interval: 10800
+    health-check:
+      enable: true
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
 proxy-groups:
   - name: PROXY
     type: select
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
   - name: bilibili
     type: select
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
     proxies:
       - DIRECT
   - name: Google
@@ -100,38 +111,37 @@ proxy-groups:
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
   - name: TELEGRAM
     type: select
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
   - name: HBO GO
     type: select
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
   - name: NETFLIX
     type: select
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
   - name: GlobalMedia
     type: select
     use:
       - Bywave
       - Miaona!
+      - Cloud-Wing
 rule-providers:
   Porn:
     type: http
     behavior: classical
     path: ./Clash/master/RuleSet/Porn.yaml
     url: "https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/Surge/RuleSet/Porn.list"
-    interval: 10800
-  hijack:
-    type: http
-    behavior: classical
-    path: ./Clash/master/RuleSet/hijack.yaml
-    url: "https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/Surge/RuleSet/Hijack.list"
     interval: 10800
   Microsoft:
     type: http
@@ -229,16 +239,8 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/Surge/RuleSet/domestic.list"
     path: .Clash/master/RuleSet/domestic.yaml
     interval: 10800
-  reject:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: .Clash/master/RuleSet/reject.yaml
-    interval: 86400
 rules:
   - RULE-SET,Porn,REJECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,hijack,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,Apple,DIRECT
   - RULE-SET,Microsoft,DIRECT
@@ -257,4 +259,4 @@ rules:
   - RULE-SET,cnip,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
   - GEOIP,,DIRECT,no-resolve
-  - MATCH,,PROXY,force-remote-dns #dns-failed
+  - MATCH,,PROXY,force-remote-dns # dns-failed
