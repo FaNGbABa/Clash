@@ -4,6 +4,3 @@ payload:
   - DOMAIN-SUFFIX,ipip.net
   - DOMAIN-KEYWORD,1plus
   - PROCESS-NAME,com.mb.android
-  - PROCESS-NAME,com.jingoal.mobile.android.privatization
-  #- DOMAIN-SUFFIX,
-  #- DOMAIN-SUFFIX,
