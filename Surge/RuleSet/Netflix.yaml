@@ -1,6 +1,7 @@
 payload:
   # 内容：Netflix
   # 数量：40条
+  - PROCESS-NAME,com.netflix.mediaclient
   - DOMAIN,netflix.com.edgesuite.net
   - DOMAIN-SUFFIX,fast.com
   - DOMAIN-SUFFIX,netflix.com
