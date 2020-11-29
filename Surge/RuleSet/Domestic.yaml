@@ -4,3 +4,6 @@ payload:
   - DOMAIN-SUFFIX,ipip.net
   - DOMAIN-KEYWORD,1plus
   - PROCESS-NAME,com.mb.android
+  - PROCESS-NAME,com.jingoal.mobile.android.privatization
+  - PROCESS-NAME,com.microsoft.skydrive
+  - PROCESS-NAME,com.tencent.tmgp.pubgmhd
