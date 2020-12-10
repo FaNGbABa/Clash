@@ -1,0 +1,2 @@
+payload:
+  - '!!import:https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP-CN@master/artifacts/geoip-cn.txt'
