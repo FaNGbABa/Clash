@@ -3,6 +3,7 @@ payload:
   - DOMAIN,wht.im
   - DOMAIN-SUFFIX,ipip.net
   - DOMAIN-KEYWORD,1plus
+  - DOMAIN-SUFFIX,raw.ev2.works.dev
   - PROCESS-NAME,com.mb.android
   - PROCESS-NAME,com.microsoft.skydrive
   - PROCESS-NAME,com.tencent.tmgp.pubgmhd
