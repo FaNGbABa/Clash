@@ -1,4 +1,35 @@
 payload:
+  # Unbreak 白名单 不应该被广告链接的网站
+
+  # Epicgames
+  - DOMAIN-SUFFIX,ol.epicgames.com
+
+  # Google
+  - DOMAIN,dl.google.com
+  - DOMAIN,mtalk.google.com
+  - DOMAIN-SUFFIX,googletraveladservices.com
+
+  # Mozilla
+  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
+
+  # Tencent
+  - DOMAIN,livew.l.qq.com
+  - DOMAIN,vd.l.qq.com
+
+  # Strava
+  - DOMAIN,analytics.strava.com
+
+  # Umeng
+  - DOMAIN,msg.umeng.com
+  - DOMAIN,msg.umengcloud.com
+
+  # Miui 小米
+  - DOMAIN,tracking.miui.com
+
+  # General
+  - DOMAIN,app.adjust.com
+  - DOMAIN,bdtj.tagtic.cn
+  
   # Domestic
   - DOMAIN,wht.im
   - DOMAIN-SUFFIX,ipip.net
@@ -7,6 +38,7 @@ payload:
   - PROCESS-NAME,com.mb.android
   - PROCESS-NAME,com.microsoft.skydrive
   - PROCESS-NAME,com.tencent.tmgp.pubgmhd
+  
   # lanip
   - IP-CIDR,10.0.0.0/8,no-resolve
   - IP-CIDR,100.64.0.0/10,no-resolve
