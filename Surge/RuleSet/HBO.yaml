@@ -1,4 +1,5 @@
 payload:
+  - PROCESS-NAME,sg.hbo.hbogo
   - DOMAIN-SUFFIX,hbo.com
   - DOMAIN-SUFFIX,hbogo.com
   - DOMAIN-SUFFIX,hbonow.com
