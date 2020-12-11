@@ -1,4 +1,5 @@
 payload:
+  - PROCESS-NAME,tv.abema
   - DOMAIN-KEYWORD,abematv.akamaized.net
   - DOMAIN-SUFFIX,abema.io
   - DOMAIN-SUFFIX,abema.tv
