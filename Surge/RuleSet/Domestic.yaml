@@ -4,6 +4,11 @@ payload:
   - DOMAIN-SUFFIX,ipip.net
   - DOMAIN-KEYWORD,1plus
   - PROCESS-NAME,com.mb.android
-  - PROCESS-NAME,com.jingoal.mobile.android.privatization
   - PROCESS-NAME,com.microsoft.skydrive
   - PROCESS-NAME,com.tencent.tmgp.pubgmhd
+  # lanip
+  - IP-CIDR,10.0.0.0/8,no-resolve
+  - IP-CIDR,100.64.0.0/10,no-resolve
+  - IP-CIDR,127.0.0.0/8,no-resolve
+  - IP-CIDR,172.16.0.0/12,no-resolve
+  - IP-CIDR,192.168.0.0/16,no-resolve
