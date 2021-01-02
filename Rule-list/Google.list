@@ -12,5 +12,5 @@ DOMAIN-SUFFIX,googleapis.cn,Google
 DOMAIN-SUFFIX,googleapis.com,Google
 DOMAIN-SUFFIX,gstatic.cn,Google
 DOMAIN-SUFFIX,gstatic.com,Google
-IP-CIDR,74.125.0.0/16,no-resolve,Google
-IP-CIDR,173.194.0.0/16,no-resolve,Google
+IP-CIDR,74.125.0.0/16,Google
+IP-CIDR,173.194.0.0/16,Google
