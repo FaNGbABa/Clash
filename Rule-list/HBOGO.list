@@ -1,25 +1,25 @@
-DOMAIN-SUFFIX,hbo.com
-DOMAIN-SUFFIX,hbogo.com
-DOMAIN-SUFFIX,hbonow.com
-DOMAIN-SUFFIX,hboasia.com
-DOMAIN-SUFFIX,hbomax.com
-DOMAIN-SUFFIX,hbogoasia.hk
-DOMAIN-SUFFIX,now.com.hk
-DOMAIN-SUFFIX,nowe.com
-DOMAIN-SUFFIX,now-tv.com
-DOMAIN-SUFFIX,now-ashare.com
-DOMAIN-SUFFIX,youboranqs01.com
-DOMAIN-SUFFIX,hbogoasia.com
-DOMAIN-SUFFIX,manifest.prod.boltdns.net
-DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
-DOMAIN,bcbolthboa-a.akamaihd.net
-DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
-DOMAIN,s3-ap-southeast-1.amazonaws.com
-DOMAIN,hbogeo.cust.footprint.net
-DOMAIN,players.brightcove.net
-DOMAIN,dai3fd1oh325y.cloudfront.net
-DOMAIN,hboasia1-i.akamaihd.net
-DOMAIN,hboasia2-i.akamaihd.net
-DOMAIN,hboasia3-i.akamaihd.net
-DOMAIN,hboasia4-i.akamaihd.net
-DOMAIN,hboasia5-i.akamaihd.net
+DOMAIN-SUFFIX,hbo.com,HBO GO
+DOMAIN-SUFFIX,hbogo.com,HBO GO
+DOMAIN-SUFFIX,hbonow.com,HBO GO
+DOMAIN-SUFFIX,hboasia.com,HBO GO
+DOMAIN-SUFFIX,hbomax.com,HBO GO
+DOMAIN-SUFFIX,hbogoasia.hk,HBO GO
+DOMAIN-SUFFIX,now.com.hk,HBO GO
+DOMAIN-SUFFIX,nowe.com,HBO GO
+DOMAIN-SUFFIX,now-tv.com,HBO GO
+DOMAIN-SUFFIX,now-ashare.com,HBO GO
+DOMAIN-SUFFIX,youboranqs01.com,HBO GO
+DOMAIN-SUFFIX,hbogoasia.com,HBO GO
+DOMAIN-SUFFIX,manifest.prod.boltdns.net,HBO GO
+DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,HBO GO
+DOMAIN,bcbolthboa-a.akamaihd.net,HBO GO
+DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,HBO GO
+DOMAIN,s3-ap-southeast-1.amazonaws.com,HBO GO
+DOMAIN,hbogeo.cust.footprint.net,HBO GO
+DOMAIN,players.brightcove.net,HBO GO
+DOMAIN,dai3fd1oh325y.cloudfront.net,HBO GO
+DOMAIN,hboasia1-i.akamaihd.net,HBO GO
+DOMAIN,hboasia2-i.akamaihd.net,HBO GO
+DOMAIN,hboasia3-i.akamaihd.net,HBO GO
+DOMAIN,hboasia4-i.akamaihd.net,HBO GO
+DOMAIN,hboasia5-i.akamaihd.net,HBO GO
