@@ -1,16 +1,16 @@
 # 内容：Google
 # 数量：24条
-DOMAIN-KEYWORD,gmail
-DOMAIN-KEYWORD,google
-DOMAIN-SUFFIX,1e100.net
-DOMAIN-SUFFIX,2mdn.net
-DOMAIN-SUFFIX,app-measurement.net
-DOMAIN-SUFFIX,g.co
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,goo.gl
-DOMAIN-SUFFIX,googleapis.cn
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.cn
-DOMAIN-SUFFIX,gstatic.com
-IP-CIDR,74.125.0.0/16,no-resolve
-IP-CIDR,173.194.0.0/16,no-resolve
+DOMAIN-KEYWORD,gmail,Google
+DOMAIN-KEYWORD,google,Google
+DOMAIN-SUFFIX,1e100.net,Google
+DOMAIN-SUFFIX,2mdn.net,Google
+DOMAIN-SUFFIX,app-measurement.net,Google
+DOMAIN-SUFFIX,g.co,Google
+DOMAIN-SUFFIX,ggpht.com,Google
+DOMAIN-SUFFIX,goo.gl,Google
+DOMAIN-SUFFIX,googleapis.cn,Google
+DOMAIN-SUFFIX,googleapis.com,Google
+DOMAIN-SUFFIX,gstatic.cn,Google
+DOMAIN-SUFFIX,gstatic.com,Google
+IP-CIDR,74.125.0.0/16,no-resolve,Google
+IP-CIDR,173.194.0.0/16,no-resolve,Google
