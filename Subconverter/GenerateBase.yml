@@ -1,29 +1,32 @@
 port: 7890
 socks-port: 7891
 redir-port: 7892
+mixed-port: 7893
 allow-lan: true
 mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:6170
-experimental:
-    ignore-resolve-fail: true
-hosts:
-    smtp.gmail.com: 74.125.20.109
+#external-ui:
 dns:
   enable: true
   listen: 0.0.0.0:5450
   ipv6: false
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip # redir-host
+  fake-ip-filter:
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - 'stun.*.*.*.*'
   nameserver:
     - 223.6.6.6
     - 114.114.114.114
+    - 119.29.29.29
     - 'tls://1.1.1.1:853'
     - 'tls://1.0.0.1:853'
     - 'tls://dns.google:853'
 tun:
   enable: true
   stack: system
-  dns-hijack:
-    - 8.8.8.8:53
-    - tcp://8.8.8.8:53
+  #dns-hijack:
+  #  - 8.8.8.8:53
+  #  - tcp://8.8.8.8:53
