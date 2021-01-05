@@ -21,9 +21,9 @@ dns:
     - 'tls://1.1.1.1:853'
     - 'tls://1.0.0.1:853'
     - 'tls://dns.google:853'
- tun:
-   enable: true
-   stack: system
-   dns-hijack:
-     - 8.8.8.8:53
-     - tcp://8.8.8.8:53
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - 8.8.8.8:53
+    - tcp://8.8.8.8:53
