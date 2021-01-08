@@ -12,6 +12,12 @@ payload:
   - PROCESS-NAME,qBittorrent
   - PROCESS-NAME,Transmission
   - PROCESS-NAME,fdm
+  - PROCESS-NAME,idm
+  - PROCESS-NAME,WXWork.exe
+  - PROCESS-NAME,QQScLauncher.exe
+  - PROCESS-NAME,WeChat.exe
+  - PROCESS-NAME,cloudmusic.exe
+  - PROCESS-NAME,MyiDesktop.exe
   - PROCESS-NAME,aria2c
   - PROCESS-NAME,Folx
   - PROCESS-NAME,NetTransport
