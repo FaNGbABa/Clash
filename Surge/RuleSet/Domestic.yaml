@@ -1,4 +1,25 @@
 payload:
+  #BT
+  - PROCESS-NAME,v2ray
+  - PROCESS-NAME,Surge%203
+  - PROCESS-NAME,ss-local
+  - PROCESS-NAME,privoxy
+  - PROCESS-NAME,trojan
+  - PROCESS-NAME,trojan-go
+  - PROCESS-NAME,naive
+  - PROCESS-NAME,Thunder
+  - PROCESS-NAME,DownloadService
+  - PROCESS-NAME,qBittorrent
+  - PROCESS-NAME,Transmission
+  - PROCESS-NAME,fdm
+  - PROCESS-NAME,aria2c
+  - PROCESS-NAME,Folx
+  - PROCESS-NAME,NetTransport
+  - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,WebTorrent
+  - PROCESS-NAME,com.flash.download
+  - PROCESS-NAME,idm.internet.download.manager.plus
+
   # Unbreak 白名单 不应该被广告链接的网站
 
   # Epicgames
