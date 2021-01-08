@@ -1,0 +1,40 @@
+[custom]
+exclude_remarks=(过期时间|剩余流量|官网|UnblockMusic|Azure|DigitalOcean|GTT|Misaka)
+clash_rule_base=https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Subconverter/GenerateBase.yml
+quanx_rule_base=https://raw.githubusercontent.com/LM-Firefly/Rules/master/Subconverter-base/all-base.tpl
+add_emoji=true
+remove_old_emoji=true
+emojis=!!import:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Config/Others/Emojis.list
+enable_rule_generator=true
+overwrite_original_rules=true
+
+#规则设置标志位
+ruleset=Speedtest,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/SpeedTest.list,86400
+ruleset=DIRECT,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/GoogleFCM.yaml,86400
+ruleset=DIRECT,clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Apple.yaml,86400
+ruleset=DIRECT,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Microsoft.yaml,86400
+ruleset=Spotify,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Spotify.yaml,86400
+ruleset=Abema,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Abema.yaml,86400
+ruleset=bilibili,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/BiliBiliHMT.yaml,86400
+ruleset=HBO GO,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/HBO.yaml,86400
+ruleset=NETFLIX,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Netflix.yaml,86400
+ruleset=Streaming,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/GlobalMedia.yaml,86400
+ruleset=TELEGRAM,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Telegram.yaml,86400
+ruleset=Google,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Google.yaml,86400
+ruleset=DIRECT,clash-classic:https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml,86400
+ruleset=DIRECT,clash-classic:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Domestic.yaml,86400
+ruleset=DIRECT,[]GEOIP,CN
+ruleset=MATCH,[]MATCH
+
+# 分组设置标志位
+custom_proxy_group=MATCH`fallback`(港).*(HKG|HKBN|HKT|NTT|PCCW|专线|中繼)`https://cp.cloudflare.com/generate_204`180
+custom_proxy_group=Speedtest`select`.*
+custom_proxy_group=bilibili`select`[]DIRECT`(台)
+custom_proxy_group=Spotify`select`[]DIRECT`(台)
+custom_proxy_group=Google`select`[]United States`.*
+custom_proxy_group=HBO GO`select`(菲)
+custom_proxy_group=Abema`select`(日).*(中繼)
+custom_proxy_group=NETFLIX`select`(新加坡|狮城|台)
+custom_proxy_group=Streaming`select`(美).*(HE|RN|中繼)
+custom_proxy_group=TELEGRAM`select`(港)
+custom_proxy_group=United States`fallback`(美).*(HE|RN|中繼)`https://cp.cloudflare.com/generate_204`180
