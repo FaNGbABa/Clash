@@ -1,6 +1,6 @@
 [custom]
 exclude_remarks=(过期时间|剩余流量|官网|UnblockMusic|Azure|DigitalOcean|GTT|Misaka)
-clash_rule_base=https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Subconverter/GenerateBase.yml
+clash_rule_base=https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Subconverter/GenerateBase.tpl
 add_emoji=true
 remove_old_emoji=true
 emojis=!!import:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Config/Others/Emojis.list
@@ -10,7 +10,7 @@ overwrite_original_rules=true
 #规则设置标志位
 ruleset=Speedtest,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/SpeedTest.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/GoogleFCM.list
-ruleset=DIRECT,https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Providers/Apple.list
+ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Apple.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Microsoft.list
 ruleset=Spotify,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Spotify.list
 ruleset=Abema,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Abema.list
@@ -19,8 +19,8 @@ ruleset=HBO GO,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/
 ruleset=NETFLIX,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Netflix.list
 ruleset=Streaming,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Streaming.list
 ruleset=TELEGRAM,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Telegram.list
-ruleset=Google,:https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Google.list
-ruleset=DIRECT,https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Direct.list
+ruleset=Google,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Google.list
+ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Direct.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Domestic&bt.list
 ruleset=DIRECT,[]GEOIP,CN
 ruleset=MATCH,[]MATCH
