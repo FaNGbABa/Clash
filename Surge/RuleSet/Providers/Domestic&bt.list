@@ -1,0 +1,70 @@
+PROCESS-NAME,v2ray
+PROCESS-NAME,Surge%203
+PROCESS-NAME,ss-local
+PROCESS-NAME,privoxy
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,naive
+PROCESS-NAME,Thunder
+PROCESS-NAME,DownloadService
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,Transmission
+PROCESS-NAME,fdm
+PROCESS-NAME,idm
+PROCESS-NAME,WXWork.exe
+PROCESS-NAME,QQScLauncher.exe
+PROCESS-NAME,WeChat.exe
+PROCESS-NAME,cloudmusic.exe
+PROCESS-NAME,MyiDesktop.exe
+PROCESS-NAME,aria2c
+PROCESS-NAME,Folx
+PROCESS-NAME,NetTransport
+PROCESS-NAME,uTorrent
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,com.flash.download
+PROCESS-NAME,idm.internet.download.manager.plus
+
+  # Unbreak 白名单 不应该被广告链接的网站
+
+  # Epicgames
+DOMAIN-SUFFIX,ol.epicgames.com
+
+  # Google
+DOMAIN,dl.google.com
+DOMAIN,mtalk.google.com
+DOMAIN-SUFFIX,googletraveladservices.com
+
+  # Mozilla
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
+
+  # Tencent
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+
+  # Strava
+DOMAIN,analytics.strava.com
+
+  # Umeng
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+
+  # Miui 小米
+DOMAIN,tracking.miui.com
+
+  # General
+DOMAIN,app.adjust.com
+DOMAIN,bdtj.tagtic.cn
+  
+  # Domestic
+DOMAIN-SUFFIX,raw.ev2.workers.dev
+PROCESS-NAME,com.mb.android
+PROCESS-NAME,com.microsoft.skydrive
+PROCESS-NAME,com.tencent.tmgp.pubgmhd
+PROCESS-NAME,com.eusoft.eudic
+  
+  # lanip
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
