@@ -24,7 +24,7 @@ ruleset=MATCH,[]DIRECT
 
 # 分组设置标志位
 custom_proxy_group=PROXY`fallback`(港).*(HKG|HKBN|HKT|NTT|PCCW|专线|中繼)`https://cp.cloudflare.com/generate_204`180
-custom_proxy_group=Speedtest`select`.*
+custom_proxy_group=Speedtest`select`[]DIRECT`.*
 custom_proxy_group=bilibili`select`[]DIRECT`(台)
 custom_proxy_group=Spotify`select`[]DIRECT`(台)
 custom_proxy_group=Google`select`[]United States`.*
