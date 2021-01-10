@@ -20,7 +20,7 @@ ruleset=TELEGRAM,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSe
 ruleset=Google,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Google.list
 ruleset=PROXY,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Global.list
 ruleset=DIRECT,[]GEOIP,CN
-ruleset=MATCH,[]DIRECT
+ruleset=DIRECT,[]MATCH
 
 # 分组设置标志位
 custom_proxy_group=PROXY`fallback`(港).*(HKG|HKBN|HKT|NTT|PCCW|专线|中繼)`https://cp.cloudflare.com/generate_204`180
