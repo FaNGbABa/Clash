@@ -99,9 +99,6 @@ DOMAIN,bdtj.tagtic.cn
   # Domestic
 DOMAIN-SUFFIX,raw.ev2.workers.dev
 PROCESS-NAME,com.mb.android
-PROCESS-NAME,com.microsoft.skydrive
-PROCESS-NAME,com.tencent.tmgp.pubgmhd
-PROCESS-NAME,com.eusoft.eudic
   
   # lanip
 IP-CIDR,10.0.0.0/8,no-resolve
