@@ -21,7 +21,7 @@ dns:
 #  use-hosts: true # lookup hosts and return IP record
   fake-ip-filter:
     - "*.lan"
-    - localhost.ptlogin2.qq.com
+    - "localhost.ptlogin2.qq.com"
     - "stun.*.*"
     - "stun.*.*.*"
     - "stun.*.*.*.*"
