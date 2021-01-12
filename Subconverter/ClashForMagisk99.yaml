@@ -21,6 +21,7 @@ ruleset=Streaming,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleS
 ruleset=TELEGRAM,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Telegram.list
 ruleset=Google,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Google.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Direct.list
+ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/direct.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Domestic&bt.list
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=MATCH,[]MATCH
