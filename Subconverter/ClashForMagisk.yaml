@@ -22,7 +22,7 @@ ruleset=TELEGRAM,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSe
 ruleset=Google,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Google.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Direct.list
 ruleset=DIRECT,https://cdn.staticaly.com/gh/FaNGbABa/Clash@master/Surge/RuleSet/Providers/Domestic&bt.list
-ruleset=DIRECT,[]GEOIP,CN
+ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=MATCH,[]MATCH
 
 # 分组设置标志位
