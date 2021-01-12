@@ -62,6 +62,7 @@ PROCESS-NAME,com.taobao.taobao #淘宝
 PROCESS-NAME,com.netease.cloudmusic #网易云音乐
 PROCESS-NAME,com.eg.android.AlipayGphone #支付宝
 PROCESS-NAME,com.maimemo.android.momo #墨墨背单词
+PROCESS-NAME,me.ele #饿了么
 
 
   # Unbreak 白名单 不应该被广告链接的网站
