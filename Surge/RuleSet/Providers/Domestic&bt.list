@@ -22,7 +22,7 @@ PROCESS-NAME,NetTransport
 PROCESS-NAME,uTorrent
 PROCESS-NAME,WebTorrent
 PROCESS-NAME,com.flash.download
-PROCESS-NAME,idm.internet.download.manager.plus
+#PROCESS-NAME,idm.internet.download.manager.plus
 
   # 安卓分应用
 PROCESS-NAME,net.oneplus.weather #一加天气
