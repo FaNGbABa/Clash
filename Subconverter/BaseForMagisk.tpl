@@ -6,7 +6,7 @@ allow-lan: true
 bind-address: "*"
 mode: rule
 log-level: silent
-external-controller: 127.0.0.1:6170
+external-controller: 127.0.0.1:9090
 #hosts:
 #   "smtp.gmail.com": 74.125.20.109
 #   "mtalk.google.com": 108.177.125.188
@@ -15,7 +15,7 @@ external-controller: 127.0.0.1:6170
 #   "alpha.clash.dev": "::1"
 dns:
   enable: true
-  listen: 0.0.0.0:5450
+  listen: 0.0.0.0:1053
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
 #  use-hosts: true # lookup hosts and return IP record
   default-nameserver:
