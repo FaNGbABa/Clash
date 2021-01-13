@@ -29,8 +29,8 @@ dns:
     - "www.msftncsi.com"
     - "www.msftconnecttest.com"
   nameserver:
-    - 114.114.114.114
-    - 223.6.6.6
+    - 117.50.11.11
+    - 52.80.66.66
     - 1.2.4.8
     - 119.29.29.29
   fallback:
