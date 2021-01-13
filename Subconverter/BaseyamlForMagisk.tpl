@@ -1,11 +1,11 @@
 port: 7890
 socks-port: 7891
 redir-port: 7892
+mixed-port: 7893
 allow-lan: true
 bind-address: "*"
 mode: rule
-log-level: info
-ipv6: false
+log-level: silent
 external-controller: 127.0.0.1:6170
 #hosts:
 #   "smtp.gmail.com": 74.125.20.109
@@ -16,18 +16,19 @@ external-controller: 127.0.0.1:6170
 dns:
   enable: true
   listen: 0.0.0.0:5450
-  enhanced-mode: fake-ip # or fake-ip
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
 #  use-hosts: true # lookup hosts and return IP record
+  default-nameserver:
+    - 117.50.11.11
+    - 52.80.66.66
+    - 1.2.4.8
+    - 119.29.29.29
+  enhanced-mode: fake-ip
   fake-ip-filter:
     - "*.lan"
-    - "localhost.ptlogin2.qq.com"
     - "stun.*.*"
     - "stun.*.*.*"
     - "stun.*.*.*.*"
-    - "dns.msftncsi.com"
-    - "www.msftncsi.com"
-    - "www.msftconnecttest.com"
   nameserver:
     - 117.50.11.11
     - 52.80.66.66
@@ -48,3 +49,9 @@ dns:
       - "+.youtube.com"
       - "+.instagram.com"
       - "+.pornhub.com"
+tun:
+  enable: true
+  stack: system # or gvisor
+  # dns-hijack:
+  #   - 8.8.8.8:53
+  #   - tcp://8.8.8.8:53
