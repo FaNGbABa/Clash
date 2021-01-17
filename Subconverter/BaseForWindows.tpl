@@ -44,11 +44,11 @@ dns:
       - "+.youtube.com"
       - "+.instagram.com"
       - "+.pornhub.com"
-  tun:
-    enable: true
-    stack: gvisor
-    dns-hijack:
-      - 8.8.8.8:53
-      - 1.1.1.1
-    macOS-auto-route: true
-    macOS-auto-detect-interface: true # 自动检测出口网卡
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 8.8.8.8:53
+    - 1.1.1.1
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true # 自动检测出口网卡
