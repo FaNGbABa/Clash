@@ -25,44 +25,44 @@ PROCESS-NAME,com.flash.download
 #PROCESS-NAME,idm.internet.download.manager.plus
 
   # 安卓分应用
-PROCESS-NAME,net.oneplus.weather #一加天气
-PROCESS-NAME,com.oneplus.card #一加卡券
-PROCESS-NAME,com.tencent.tmgp.sgame #王者荣耀
-PROCESS-NAME,com.sdjictec.qdmetro #青岛地铁
-PROCESS-NAME,com.tmri.app.main #交管12123
-PROCESS-NAME,com.nowcasting.activity #彩云天气
-PROCESS-NAME,com.sankuai.meituan #美团
-PROCESS-NAME,com.douban.frodo #豆瓣
-PROCESS-NAME,com.sinovatech.unicom.ui #联通手机营业厅
-PROCESS-NAME,cn.oneplus.wallet #一加公交卡
-PROCESS-NAME,com.MobileTicket #铁路12306
-PROCESS-NAME,com.oneplus.backupstore #一加搬家
-PROCESS-NAME,com.microsoft.skydrive #One Drive
-PROCESS-NAME,com.tencent.mm #WeChat
-PROCESS-NAME,com.sankuai.meituan.takeoutnew #美团外卖
-PROCESS-NAME,com.chinamworld.bocmbci #中国银行
-PROCESS-NAME,com.oray.sunlogin #向日葵远程控制
-PROCESS-NAME,com.icbc #中国工商银行
-PROCESS-NAME,com.microsoft.office.onenote #OneNote
-PROCESS-NAME,com.apple.android.music #Apple Music
-PROCESS-NAME,com.tencent.wework #企业微信
-PROCESS-NAME,com.eusoft.eudic #欧路词典
-PROCESS-NAME,com.huami.watch.hmwatchmanager #Zepp
-PROCESS-NAME,com.tencent.mobileqq #QQ
-PROCESS-NAME,com.umpay.qingdaonfc #琴岛通
-PROCESS-NAME,com.coolapk.market #酷安
-PROCESS-NAME,com.chinamworld.mian #中国建设银行
-PROCESS-NAME,com.huya.kiwi #虎牙直播
-PROCESS-NAME,com.autonavi.minimap #高德地图
-PROCESS-NAME,com.sina.weibo #微博
-PROCESS-NAME,com.tencent.tmgp.pubgmhd #和平精英
-PROCESS-NAME,com.smile.gifmaker #快手
-PROCESS-NAME,com.baidu.netdisk #百度网盘
-PROCESS-NAME,com.taobao.taobao #淘宝
-PROCESS-NAME,com.netease.cloudmusic #网易云音乐
-PROCESS-NAME,com.eg.android.AlipayGphone #支付宝
-PROCESS-NAME,com.maimemo.android.momo #墨墨背单词
-PROCESS-NAME,me.ele #饿了么
+PROCESS-NAME,net.oneplus.weather
+PROCESS-NAME,com.oneplus.card
+PROCESS-NAME,com.tencent.tmgp.sgame
+PROCESS-NAME,com.sdjictec.qdmetro
+PROCESS-NAME,com.tmri.app.main
+PROCESS-NAME,com.nowcasting.activity
+PROCESS-NAME,com.sankuai.meituan
+PROCESS-NAME,com.douban.frodo
+PROCESS-NAME,com.sinovatech.unicom.ui
+PROCESS-NAME,cn.oneplus.wallet
+PROCESS-NAME,com.MobileTicket
+PROCESS-NAME,com.oneplus.backupstore
+PROCESS-NAME,com.microsoft.skydrive
+PROCESS-NAME,com.tencent.mm
+PROCESS-NAME,com.sankuai.meituan.takeoutnew
+PROCESS-NAME,com.chinamworld.bocmbci
+PROCESS-NAME,com.oray.sunlogin
+PROCESS-NAME,com.icbc
+PROCESS-NAME,com.microsoft.office.onenote
+PROCESS-NAME,com.apple.android.music
+PROCESS-NAME,com.tencent.wework
+PROCESS-NAME,com.eusoft.eudic
+PROCESS-NAME,com.huami.watch.hmwatchmanager
+PROCESS-NAME,com.tencent.mobileqq
+PROCESS-NAME,com.umpay.qingdaonfc
+PROCESS-NAME,com.coolapk.market
+PROCESS-NAME,com.chinamworld.mian
+PROCESS-NAME,com.huya.kiwi
+PROCESS-NAME,com.autonavi.minimap
+PROCESS-NAME,com.sina.weibo
+PROCESS-NAME,com.tencent.tmgp.pubgmhd
+PROCESS-NAME,com.smile.gifmaker
+PROCESS-NAME,com.baidu.netdisk
+PROCESS-NAME,com.taobao.taobao
+PROCESS-NAME,com.netease.cloudmusic
+PROCESS-NAME,com.eg.android.AlipayGphone
+PROCESS-NAME,com.maimemo.android.momo
+PROCESS-NAME,me.ele
 
 
   # Unbreak 白名单 不应该被广告链接的网站
