@@ -1,23 +1,22 @@
   # 内容：Google
   # 数量：26条
-PROCESS-NAME,com.android.vending #Play Store
-PROCESS-NAME,com.google.android.gms #Google Play Services
-PROCESS-NAME,com.google.android.apps.subscriptions.red #Google One
-PROCESS-NAME,com.google.android.youtube #YouTube
-PROCESS-NAME,com.google.android.googlequicksearchbox #Google
-PROCESS-NAME,com.google.android.gm #Gmail
-PROCESS-NAME,com.google.android.music #Play Music
-PROCESS-NAME,com.google.android.apps.docs #Diver
-PROCESS-NAME,com.google.android.apps.maps #Maps
-PROCESS-NAME,com.google.android.gsf #Google 服务框架
-PROCESS-NAME,com.google.android.tts #文字转语音引擎
-PROCESS-NAME,com.google.android.apps.walletnfcrel #Google Pay
-PROCESS-NAME,com.google.android.videos #电影
-PROCESS-NAME,com.google.android.apps.photos #相册
-PROCESS-NAME,com.google.android.calendar #日历
-PROCESS-NAME,com.google.android.keep #keep 笔记
-PROCESS-NAME,com.google.android.inputmethod.latin #Gboard
-PROCESS-NAME,com.google.android.gms.location.history #位置记录
+PROCESS-NAME,com.android.vending
+PROCESS-NAME,com.google.android.gms
+PROCESS-NAME,com.google.android.apps.subscriptions.red
+PROCESS-NAME,com.google.android.youtube
+PROCESS-NAME,com.google.android.googlequicksearchbox
+PROCESS-NAME,com.google.android.gm
+PROCESS-NAME,com.google.android.music
+PROCESS-NAME,com.google.android.apps.docs
+PROCESS-NAME,com.google.android.apps.maps
+PROCESS-NAME,com.google.android.gsf
+PROCESS-NAME,com.google.android.apps.walletnfcrel
+PROCESS-NAME,com.google.android.videos
+PROCESS-NAME,com.google.android.apps.photos
+PROCESS-NAME,com.google.android.calendar
+PROCESS-NAME,com.google.android.keep
+PROCESS-NAME,com.google.android.inputmethod.latin
+PROCESS-NAME,com.google.android.gms.location.history
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,ip.sb
