@@ -19,10 +19,8 @@ dns:
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
 #  use-hosts: true # lookup hosts and return IP record
   default-nameserver:
-    - 117.50.11.11
-    - 52.80.66.66
-    - 1.2.4.8
     - 119.29.29.29
+    - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-filter:
     - "*.lan"
@@ -30,15 +28,12 @@ dns:
     - "stun.*.*.*"
     - "stun.*.*.*.*"
   nameserver:
-    - 117.50.11.11
-    - 52.80.66.66
-    - 1.2.4.8
-    - 119.29.29.29
+    - 'https://dh-dns.global-idc.net/dns-query'
   fallback:
-    - "tls://1.1.1.1:853"
-    - "tls://1.0.0.1:853"
-    - "tls://dns.google:853"
-    - "tcp://8.8.8.8"
+    - 'https://cloudflare-dns.com/dns-query'
+    - 'https://dns.rubyfish.cn/dns-query'
+    - 'https://dns.google/dns-query'
+    - 'https://1.1.1.1/dns-query'
   fallback-filter:
     geoip: true
     ipcidr:
@@ -49,3 +44,11 @@ dns:
       - "+.youtube.com"
       - "+.instagram.com"
       - "+.pornhub.com"
+  tun:
+    enable: true
+    stack: gvisor
+    dns-hijack:
+      - 8.8.8.8:53
+      - 1.1.1.1
+    macOS-auto-route: true
+    macOS-auto-detect-interface: true # 自动检测出口网卡
