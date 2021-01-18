@@ -24,7 +24,6 @@ dns:
     - 223.6.6.6
     - 1.2.4.8
     - 119.29.29.29
-    - 'https://dh-dns.global-idc.net/dns-query'
   fallback:
     - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.rubyfish.cn/dns-query'
@@ -40,6 +39,8 @@ dns:
       - '+.youtube.com'
       - '+.instagram.com'
       - '+.pornhub.com'
+clash-for-android:
+  append-system-dns: true
 tun:
   enable: true
   stack: system # or gvisor
