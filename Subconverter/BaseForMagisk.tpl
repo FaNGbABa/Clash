@@ -45,5 +45,8 @@ tun:
   enable: true
   stack: system # or gvisor
   dns-hijack:
+    - 119.29.29.29
+    - 1.2.4.8
+    - 223.6.6.6
     - 8.8.8.8
     - 1.0.0.1
