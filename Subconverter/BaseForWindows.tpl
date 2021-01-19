@@ -18,9 +18,6 @@ dns:
   listen: 0.0.0.0:1053
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
 #  use-hosts: true # lookup hosts and return IP record
-  default-nameserver:
-    - 119.29.29.29
-    - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-filter:
     - "*.lan"
@@ -31,9 +28,7 @@ dns:
     - 'https://dh-dns.global-idc.net/dns-query'
   fallback:
     - 'https://cloudflare-dns.com/dns-query'
-    - 'https://dns.rubyfish.cn/dns-query'
     - 'https://dns.google/dns-query'
-    - 'https://1.1.1.1/dns-query'
   fallback-filter:
     geoip: true
     ipcidr:
@@ -48,7 +43,6 @@ tun:
   enable: true
   stack: gvisor
   dns-hijack:
-    - 8.8.8.8:53
     - 1.1.1.1
   macOS-auto-route: true
   macOS-auto-detect-interface: true # 自动检测出口网卡
