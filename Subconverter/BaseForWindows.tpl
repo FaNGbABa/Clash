@@ -24,6 +24,10 @@ dns:
     - "stun.*.*"
     - "stun.*.*.*"
     - "stun.*.*.*.*"
+    - "dns.msftncsi.com"
+    - "www.msftncsi.com"
+    - "www.msftconnecttest.com"
+    - "localhost.ptlogin2.qq.com"
   nameserver:
     - 'https://dh-dns.global-idc.net/dns-query'
   fallback:
