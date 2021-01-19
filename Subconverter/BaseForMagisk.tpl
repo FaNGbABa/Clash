@@ -18,24 +18,17 @@ dns:
     - 'stun.*.*.*'
     - 'stun.*.*.*.*'
   nameserver:
-    - https://dh-dns.global-idc.net/dns-query
-  fallback:
-    - 'https://cloudflare-dns.com/dns-query'
-    - 'https://dns.google/dns-query'
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
-      - '+.instagram.com'
-      - '+.pornhub.com'
+    - 1.2.4.8
+    - 119.29.29.29
+    - 223.5.5.5
+    - 1.1.1.1
+    - 8.8.8.8
 clash-for-android:
   append-system-dns: true
 tun:
   enable: true
   stack: system # or gvisor
   dns-hijack:
+    - 198.18.0.1/.*
     - 1.1.1.1
+    - 119.29.29.29
