@@ -17,18 +17,20 @@ dns:
     - 'stun.*.*'
     - 'stun.*.*.*'
     - 'stun.*.*.*.*'
+    - "localhost.ptlogin2.qq.com"
   nameserver:
     - 1.2.4.8
     - 119.29.29.29
     - 223.5.5.5
     - 1.1.1.1
     - 8.8.8.8
-clash-for-android:
-  append-system-dns: true
+    fallback-filter:
+      geoip: true
+      ipcidr:
 tun:
   enable: true
   stack: system # or gvisor
   dns-hijack:
     - 198.18.0.1/.*
-    - 1.1.1.1
+    - 223.6.6.6
     - 119.29.29.29
