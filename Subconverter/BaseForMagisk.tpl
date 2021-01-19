@@ -11,9 +11,6 @@ dns:
   enable: true
   listen: 0.0.0.0:1053
   fake-ip-range: 198.18.0.1/16
-  default-nameserver:
-    - 119.29.29.29
-    - 1.1.1.1
   enhanced-mode: fake-ip
   fake-ip-filter:
     - '*.lan'
@@ -21,14 +18,10 @@ dns:
     - 'stun.*.*.*'
     - 'stun.*.*.*.*'
   nameserver:
-    - 223.6.6.6
-    - 1.2.4.8
-    - 119.29.29.29
+    - https://dh-dns.global-idc.net/dns-query
   fallback:
     - 'https://cloudflare-dns.com/dns-query'
-    - 'https://dns.rubyfish.cn/dns-query'
     - 'https://dns.google/dns-query'
-    - 'https://1.1.1.1/dns-query'
   fallback-filter:
     geoip: true
     ipcidr:
@@ -45,8 +38,4 @@ tun:
   enable: true
   stack: system # or gvisor
   dns-hijack:
-    - 119.29.29.29
-    - 1.2.4.8
-    - 223.6.6.6
-    - 8.8.8.8
-    - 1.0.0.1
+    - 1.1.1.1
