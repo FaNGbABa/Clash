@@ -21,8 +21,6 @@ dns:
   nameserver:
     - 114.114.114.114
     - 1.2.4.8
-    - 119.29.29.29
-    - 223.5.5.5
 tun:
   enable: true
   stack: system # or gvisor
