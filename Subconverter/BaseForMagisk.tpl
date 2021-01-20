@@ -19,14 +19,10 @@ dns:
     - 'stun.*.*.*.*'
     - "localhost.ptlogin2.qq.com"
   nameserver:
+    - 114.114.114.114
     - 1.2.4.8
     - 119.29.29.29
     - 223.5.5.5
-    - 1.1.1.1
-    - 8.8.8.8
-    fallback-filter:
-      geoip: true
-      ipcidr:
 tun:
   enable: true
   stack: system # or gvisor
