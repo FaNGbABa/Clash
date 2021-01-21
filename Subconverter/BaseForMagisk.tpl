@@ -10,17 +10,10 @@ external-controller: 127.0.0.1:9090
 dns:
   enable: true
   listen: 0.0.0.0:1053
-  fake-ip-range: 198.18.0.1/16
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-filter:
-    - '*.lan'
-    - 'stun.*.*'
-    - 'stun.*.*.*'
-    - 'stun.*.*.*.*'
-    - "localhost.ptlogin2.qq.com"
   nameserver:
     - 114.114.114.114
-    - 1.2.4.8
 tun:
   enable: true
   stack: system # or gvisor
