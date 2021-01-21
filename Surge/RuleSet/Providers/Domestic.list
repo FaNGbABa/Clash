@@ -21,6 +21,7 @@ PROCESS-NAME,Folx
 PROCESS-NAME,NetTransport
 PROCESS-NAME,uTorrent
 PROCESS-NAME,WebTorrent
+PROCESS-NAME,ThunderStart.exe
 PROCESS-NAME,com.flash.download
 #PROCESS-NAME,idm.internet.download.manager.plus
 
