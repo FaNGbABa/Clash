@@ -7,49 +7,25 @@ bind-address: "*"
 mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
-#hosts:
-#   "smtp.gmail.com": 74.125.20.109
-#   "mtalk.google.com": 108.177.125.188
-#   "*.clash.dev": 127.0.0.1
-#   ".dev": 127.0.0.1
-#   "alpha.clash.dev": "::1"
+hosts:
+   "smtp.gmail.com": 74.125.20.109
+   "mtalk.google.com": 108.177.125.188
+   "*.clash.dev": 127.0.0.1
+   ".dev": 127.0.0.1
+   "alpha.clash.dev": "::1"
 dns:
   enable: true
-  listen: 0.0.0.0:1053
-  fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
-#  use-hosts: true # lookup hosts and return IP record
-  enhanced-mode: fake-ip
-  fake-ip-filter:
-    - "*.lan"
-    - "stun.*.*"
-    - "stun.*.*.*"
-    - "stun.*.*.*.*"
-    - "dns.msftncsi.com"
-    - "www.msftncsi.com"
-    - "www.msftconnecttest.com"
-    - "localhost.ptlogin2.qq.com"
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
   nameserver:
-    - 'https://dh-dns.global-idc.net/dns-query'
-  fallback:
-    - 'https://cloudflare-dns.com/dns-query'
-    - 'https://dns.google/dns-query'
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-    domain:
-      - "+.google.com"
-      - "+.facebook.com"
-      - "+.youtube.com"
-      - "+.instagram.com"
-      - "+.pornhub.com"
-tun:
-  enable: true
-  stack: gvisor
-  dns-hijack:
-    - 1.1.1.1
-  macOS-auto-route: true
-  macOS-auto-detect-interface: true # 自动检测出口网卡
+    - 114.114.114.114
+#tun:
+#  enable: true
+#  stack: gvisor
+#  dns-hijack:
+#    - 1.1.1.1
+#  macOS-auto-route: true
+#  macOS-auto-detect-interface: true # 自动检测出口网卡
 cfw-latency-timeout: 360
 cfw-latency-url: https://cp.cloudflare.com/generate_204
 cfw-conn-break-strategy:
