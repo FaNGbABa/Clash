@@ -13,7 +13,7 @@ dns:
   enhanced-mode: redir-host
   fake-ip-filter:
   nameserver:
-    - 114.114.114.114
+    - https://dh-dns.global-idc.net/dns-query
 tun:
   enable: true
   stack: system # or gvisor
