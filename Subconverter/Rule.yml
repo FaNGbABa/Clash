@@ -1,0 +1,108 @@
+rule-providers:
+  SpeedTest:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/SpeedTest.list
+    path: ./providers/rule-provider_SpeedTest.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Microsoft.yaml
+    path: ./providers/rule-provider_Microsoft.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.staticaly.com/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./providers/rule-provider_icloud.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Apple.yaml
+    path: ./providers/rule-provider_Apple.yaml
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Google.yaml
+    path: ./providers/rule-provider_Google.yaml
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Spotify.yaml
+    path: ./providers/rule-provider_Spotify.yaml
+    interval: 86400
+  Abema:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Abema.yaml
+    path: ./providers/rule-provider_Abema.yaml
+    interval: 86400
+  BiliBiliHMT:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/BiliBiliHMT.yaml
+    path: ./providers/rule-provider_BiliBiliHMT.yaml
+    interval: 86400
+  HBO:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/HBO.yaml
+    path: ./providers/rule-provider_HBO.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Netflix.yaml
+    path: ./providers/rule-provider_Netflix.yaml
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/GlobalMedia.yaml
+    path: ./providers/rule-provider_GlobalMedia.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Telegram.yaml
+    path: ./providers/rule-provider_Telegram.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.staticaly.com/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: ./providers/rule-provider_direct.yaml
+    interval: 86400
+  Domestic:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Domestic.yaml
+    path: ./providers/rule-provider_Domestic.yaml
+    interval: 86400
+rules:
+  - RULE-SET,SpeedTest,Speedtest
+  - RULE-SET,Microsoft,DIRECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,Google,Google
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Abema,Abema
+  - RULE-SET,BiliBiliHMT,bilibili
+  - RULE-SET,HBO,HBO GO
+  - RULE-SET,Netflix,NETFLIX
+  - RULE-SET,GlobalMedia,Streaming
+  - RULE-SET,Telegram,TELEGRAM
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,Domestic,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  - GEOIP,US,US
+  - GEOIP,JP,JP
+  - GEOIP,TW,TW
+  - GEOIP,HK,HK
+  - GEOIP,SG,SG
+  - GEOIP,KR,KR
+  - MATCH,,MATCH,dns-failed
