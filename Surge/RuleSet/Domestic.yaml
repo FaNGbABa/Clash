@@ -23,8 +23,50 @@ payload:
   - PROCESS-NAME,NetTransport
   - PROCESS-NAME,uTorrent
   - PROCESS-NAME,WebTorrent
+  - PROCESS-NAME,ThunderStart.exe
   - PROCESS-NAME,com.flash.download
-  - PROCESS-NAME,idm.internet.download.manager.plus
+#  - PROCESS-NAME,idm.internet.download.manager.plus
+
+  # 安卓分应用
+  - PROCESS-NAME,net.oneplus.weather
+  - PROCESS-NAME,com.oneplus.card
+  - PROCESS-NAME,com.tencent.tmgp.sgame
+  - PROCESS-NAME,com.sdjictec.qdmetro
+  - PROCESS-NAME,com.tmri.app.main
+  - PROCESS-NAME,com.nowcasting.activity
+  - PROCESS-NAME,com.sankuai.meituan
+  - PROCESS-NAME,com.douban.frodo
+  - PROCESS-NAME,com.sinovatech.unicom.ui
+  - PROCESS-NAME,cn.oneplus.wallet
+  - PROCESS-NAME,com.MobileTicket
+  - PROCESS-NAME,com.oneplus.backupstore
+  - PROCESS-NAME,com.microsoft.skydrive
+  - PROCESS-NAME,com.tencent.mm
+  - PROCESS-NAME,com.sankuai.meituan.takeoutnew
+  - PROCESS-NAME,com.chinamworld.bocmbci
+  - PROCESS-NAME,com.oray.sunlogin
+  - PROCESS-NAME,com.icbc
+  - PROCESS-NAME,com.microsoft.office.onenote
+  - PROCESS-NAME,com.apple.android.music
+  - PROCESS-NAME,com.tencent.wework
+  - PROCESS-NAME,com.eusoft.eudic
+  - PROCESS-NAME,com.huami.watch.hmwatchmanager
+  - PROCESS-NAME,com.tencent.mobileqq
+  - PROCESS-NAME,com.umpay.qingdaonfc
+  - PROCESS-NAME,com.coolapk.market
+  - PROCESS-NAME,com.chinamworld.mian
+  - PROCESS-NAME,com.huya.kiwi
+  - PROCESS-NAME,com.autonavi.minimap
+  - PROCESS-NAME,com.sina.weibo
+  - PROCESS-NAME,com.tencent.tmgp.pubgmhd
+  - PROCESS-NAME,com.smile.gifmaker
+  - PROCESS-NAME,com.baidu.netdisk
+  - PROCESS-NAME,com.taobao.taobao
+  - PROCESS-NAME,com.netease.cloudmusic
+  - PROCESS-NAME,com.eg.android.AlipayGphone
+  - PROCESS-NAME,com.maimemo.android.momo
+  - PROCESS-NAME,me.ele
+
 
   # Unbreak 白名单 不应该被广告链接的网站
 
@@ -60,9 +102,6 @@ payload:
   # Domestic
   - DOMAIN-SUFFIX,raw.ev2.workers.dev
   - PROCESS-NAME,com.mb.android
-  - PROCESS-NAME,com.microsoft.skydrive
-  - PROCESS-NAME,com.tencent.tmgp.pubgmhd
-  - PROCESS-NAME,com.eusoft.eudic
   
   # lanip
   - IP-CIDR,10.0.0.0/8,no-resolve
