@@ -15,6 +15,6 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-tun:
-  enable: true
-  stack: system # or gvisor
+#tun:
+#  enable: true
+#  stack: system # or gvisor
