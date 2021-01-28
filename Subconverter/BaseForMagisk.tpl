@@ -18,3 +18,6 @@ dns:
 tun:
   enable: true
   stack: system # or gvisor
+  dns-hijack:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
