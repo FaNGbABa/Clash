@@ -23,5 +23,3 @@ dns:
 tun:
   enable: true
   stack: system # or gvisor
-  dns-hijack:
-    - 192.168.2.1:53
