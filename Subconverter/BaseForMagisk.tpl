@@ -26,3 +26,8 @@ tun:
   dns-hijack:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - https://dh-dns.global-idc.net/dns-query
+    - 114.114.114.114
+    - 123.125.81.6
+    - 202.102.128.68
+    - 202.102.134.68
