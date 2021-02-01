@@ -22,4 +22,4 @@ dns:
     - 202.102.134.68
 tun:
   enable: true
-  stack: system # or gvisor
+  stack: gvisor # or system
