@@ -18,13 +18,13 @@ dns:
     - localhost.ptlogin2.qq.com
   nameserver:
     - 119.29.29.29
-    - 223.5.5.5
+#    - 223.5.5.5
     - 114.114.114.114
     - 202.102.128.68
   fallback: 
-    - https://dns.cloudflare.com/dns-query
+#    - https://dns.cloudflare.com/dns-query
     - https://family.cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
+#    - https://dns.google/dns-query
     - https://dh-dns.global-idc.net/dns-query
   fallback-filter:
     geoip: true
