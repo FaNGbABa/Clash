@@ -32,6 +32,10 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
+      - '+.tiktokv.com'
+      - '+.byteoversea.com'
+      - '+.tik-tokapi.com'
+      - '+.musical.ly'
 tun:
   enable: true
   stack: gvisor # or system
