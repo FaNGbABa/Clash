@@ -23,3 +23,5 @@ dns:
 tun:
   enable: true
   stack: gvisor # or system
+  dns-hijack:
+    - https://dh-dns.global-idc.net/dns-query
