@@ -20,8 +20,10 @@ dns:
     - localhost.ptlogin2.qq.com
   nameserver:
     - https://dh-dns.global-idc.net/dns-query
+    - tls://dh-dns.global-idc.net:853
 tun:
   enable: true
   stack: gvisor # or system
   dns-hijack:
     - https://dh-dns.global-idc.net/dns-query
+    - tls://dh-dns.global-idc.net:853
