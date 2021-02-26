@@ -87,16 +87,23 @@ dns:
     - '+.stun.*.*.*.*'
   nameserver:
     - 114.114.114.114
-    - 202.102.128.68
-    - 202.102.154.3
-    - 202.102.134.68
-    - 202.102.152.3
+  fallback: 
+    - 1.1.1.1
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.tiktokv.com'
+      - '+.byteoversea.com'
+      - '+.tik-tokapi.com'
+      - '+.musical.ly'
 tun:
   enable: true
   stack: gvisor # or system
   dns-hijack:
     - 114.114.114.114
-    - 202.102.128.68
-    - 202.102.154.3
-    - 202.102.134.68
-    - 202.102.152.3
+    - 1.1.1.1
