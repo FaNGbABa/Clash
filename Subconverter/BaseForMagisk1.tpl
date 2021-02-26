@@ -12,18 +12,91 @@ hosts:
 dns:
   enable: true
   listen: 0.0.0.0:1053
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip #redir-host
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
+    # === LAN ===
     - '*.lan'
-    - localhost.ptlogin2.qq.com
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    # === Linksys Wireless Router ===
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    # === ASUS Router ===
+    - '*.router.asus.com'
+    # === Apple Software Update Service ===
+    - 'swscan.apple.com'
+    - 'mesu.apple.com'
+    # === Windows 10 Connnect Detection ===
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - 'msftconnecttest.com'
+    - 'msftncsi.com'
+    # === Google ===
+    - 'lens.l.google.com'
+    - 'stun.l.google.com'
+    ## Golang
+    - 'proxy.golang.org'
+    # === NTP Service ===
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'time.*.edu.cn'
+    - 'time.*.apple.com'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    # === Game Service ===
+    ## Nintendo Switch
+    - '+.srv.nintendo.net'
+    ## Sony PlayStation
+    - '+.stun.playstation.net'
+    ## Microsoft Xbox
+    - 'xbox.*.microsoft.com'
+    - 'xnotify.xboxlive.com'
+    # === Other ===
+    ## QQ Quick Login
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    ## STUN Server
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
   nameserver:
-    - 'https://dh-dns.global-idc.net/dns-query'
-    - 'tls://dh-dns.global-idc.net:853'
+    - 114.114.114.114
+    - 202.102.128.68
+    - 202.102.154.3
+    - 202.102.134.68
+    - 202.102.152.3
 tun:
   enable: true
   stack: gvisor # or system
   dns-hijack:
-    - 'https://dh-dns.global-idc.net/dns-query'
-    - 'tls://dh-dns.global-idc.net:853'
+    - 114.114.114.114
+    - 202.102.128.68
+    - 202.102.154.3
+    - 202.102.134.68
+    - 202.102.152.3
