@@ -88,7 +88,7 @@ dns:
   nameserver:
     - 114.114.114.114
   fallback: 
-    - 1.1.1.1
+    - 114.114.114.114
   fallback-filter:
     geoip: true
     ipcidr:
@@ -106,4 +106,3 @@ tun:
   stack: gvisor # or system
   dns-hijack:
     - 114.114.114.114
-    - 1.1.1.1
