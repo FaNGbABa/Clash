@@ -7,6 +7,7 @@ bind-address: "*"
 mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
+external-ui: yacd-gh-pages
 hosts:
     smtp.gmail.com: 74.125.20.109
 dns:
@@ -91,4 +92,4 @@ tun:
   enable: true
   stack: gvisor # or system
   dns-hijack:
-    - 114.114.114.114
+    - 114.114.114.114:53
