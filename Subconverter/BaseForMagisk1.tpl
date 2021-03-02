@@ -87,9 +87,26 @@ dns:
     - '+.stun.*.*.*'
     - '+.stun.*.*.*.*'
   nameserver:
-    - 114.114.114.114
+    - 'tls://114.114.114.110:53'
+    - 'https://rubyfish.cn/dns-query'
+  fallback:
+    - 'https://cloudflare-dns.com/dns-query'
+    - 'https://dns.google/dns-query'
+    - 'https://doh.opendns.com/dns-query'
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.tiktokv.com'
+      - '+.byteoversea.com'
+      - '+.tik-tokapi.com'
+      - '+.musical.ly'
 tun:
   enable: true
   stack: gvisor # or system
-  dns-hijack:
-    - 114.114.114.114:53
+#  dns-hijack:
+#    - 114.114.114.114:53
