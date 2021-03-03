@@ -88,7 +88,7 @@ dns:
     - '+.stun.*.*.*.*'
   nameserver:
     - 'tls://114.114.114.110:53'
-    - 'https://rubyfish.cn/dns-query'
+    - 'tls://vdpiya.d.rubyfish.cn:853'
   fallback:
     - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.google/dns-query'
@@ -107,6 +107,6 @@ dns:
       - '+.musical.ly'
 tun:
   enable: true
-  stack: gvisor # or system
+  stack: system
 #  dns-hijack:
 #    - 114.114.114.114:53
