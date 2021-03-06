@@ -1,10 +1,10 @@
-(HK丨)@香港
-(SG丨)@新加坡
-(1.0x丨)@ 
-(IEPL-HK-DC3丨)@亚太国际专线 
-(HK-DC2丨)@BGP 
-(IEPL-SG-DC1丨)@亚太国际专线 
+(HK|)@香港
+(SG|)@新加坡
+(1.0x|)@ 
+(IEPL-HK-DC3|)@亚太国际专线 
+(HK-DC2|)@BGP 
+(IEPL- SG-DC1|)@亚太国际专线 
 (Netflix Disney+)@流媒体
 (CU)@联通优化
 (CM)@移动优化
-(0.8x丨)@  
+(0.8x|)@  
