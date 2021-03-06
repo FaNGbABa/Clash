@@ -1,9 +1,9 @@
 (HK)@香港
 (SG)@新加坡
 (1.0x)@1倍率
-(IEPL-HK-DC3)@亚太国际专线 
+(IEPL-HK-DC3)@亚太国际专线
 (HK-DC2)@BGP中转线路
-(IEPL- SG-DC1)@亚太国际专线 
+(IEPL- SG-DC1)@亚太国际专线
 (Netflix Disney+)@流媒体
 (CU)@联通优化
 (CM)@移动优化
