@@ -2,12 +2,10 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-allow-lan: true
-bind-address: "*"
+allow-lan: true XD
 mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
-external-ui: yacd-gh-pages
 hosts:
     smtp.gmail.com: 74.125.20.109
 dns:
@@ -17,79 +15,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
-    # === LAN ===
-    - '*.lan'
-    - '*.localdomain'
-    - '*.example'
-    - '*.invalid'
-    - '*.localhost'
-    - '*.test'
-    - '*.local'
-    - '*.home.arpa'
-    # === Linksys Wireless Router ===
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    # === ASUS Router ===
-    - '*.router.asus.com'
-    # === Apple Software Update Service ===
-    - 'swscan.apple.com'
-    - 'mesu.apple.com'
-    # === Windows 10 Connnect Detection ===
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - 'msftconnecttest.com'
-    - 'msftncsi.com'
-    # === Google ===
-    - 'lens.l.google.com'
-    - 'stun.l.google.com'
-    ## Golang
-    - 'proxy.golang.org'
-    # === NTP Service ===
-    - 'time.*.com'
-    - 'time.*.gov'
-    - 'time.*.edu.cn'
-    - 'time.*.apple.com'
-    - 'time1.*.com'
-    - 'time2.*.com'
-    - 'time3.*.com'
-    - 'time4.*.com'
-    - 'time5.*.com'
-    - 'time6.*.com'
-    - 'time7.*.com'
-    - 'ntp.*.com'
-    - 'ntp1.*.com'
-    - 'ntp2.*.com'
-    - 'ntp3.*.com'
-    - 'ntp4.*.com'
-    - 'ntp5.*.com'
-    - 'ntp6.*.com'
-    - 'ntp7.*.com'
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - '+.pool.ntp.org'
-    - 'time1.cloud.tencent.com'
-    # === Game Service ===
-    ## Nintendo Switch
-    - '+.srv.nintendo.net'
-    ## Sony PlayStation
-    - '+.stun.playstation.net'
-    ## Microsoft Xbox
-    - 'xbox.*.microsoft.com'
-    - 'xnotify.xboxlive.com'
-    # === Other ===
-    ## QQ Quick Login
-    - 'localhost.ptlogin2.qq.com'
-    - 'localhost.sec.qq.com'
-    ## STUN Server
-    - 'stun.*.*'
-    - 'stun.*.*.*'
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*.*.*'
   nameserver:
-    - 'tls://114.114.114.110:53'
-    - 'tls://vdpiya.d.rubyfish.cn:853'
+    - 'tls://114.114.114.114:853'
+    - 'tls://dot.pub:853'
+    - 'tls://dns.alidns.com:853'
+    - 'tls://117.50.11.11:853'
   fallback:
+    - 'tls://vdpiya.d.rubyfish.cn:853'
     - 'https://cloudflare-dns.com/dns-query'
     - 'https://dns.google/dns-query'
     - 'https://doh.opendns.com/dns-query'
@@ -105,8 +37,3 @@ dns:
       - '+.byteoversea.com'
       - '+.tik-tokapi.com'
       - '+.musical.ly'
-tun:
-  enable: true
-  stack: system
-#  dns-hijack:
-#    - 114.114.114.114:53
