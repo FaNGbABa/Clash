@@ -2,7 +2,7 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-allow-lan: true XD
+allow-lan: true
 mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
