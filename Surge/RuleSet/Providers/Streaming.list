@@ -82,7 +82,6 @@ DOMAIN-SUFFIX,dzcdn.net
 # DisneyPlus
 # USER-AGENT,Disney*
 # USER-AGENT,Disney+*
-PROCESS-NAME,com.disney.disneyplus
 DOMAIN,cdn.registerdisney.go.com
 DOMAIN,cdn.unid.go.com
 DOMAIN,disney.my.sentry.io
