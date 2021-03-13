@@ -9,8 +9,8 @@ external-controller: 127.0.0.1:9090
 hosts:
    '*.clash.dev': 127.0.0.1 
    'alpha.clash.dev': ::1
-    smtp.gmail.com: 74.125.20.109
-    baidu.com: 127.0.0.1
+   'smtp.gmail.com': 74.125.20.109
+   '*.baidu.com': 127.0.0.1
 dns:
   enable: true
   listen: 0.0.0.0:1053
@@ -39,10 +39,6 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-   #domain:
-    # - '+.google.com'
-    # - '+.facebook.com'
-    # - '+.youtube.com'
 tun:
   enable: true
   stack: system # or gvisor
