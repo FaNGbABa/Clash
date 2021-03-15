@@ -41,7 +41,7 @@ dns:
 tun:
   enable: true
   stack: system # or gvisor
-  dns-hijack:
-    - tcp://8.8.8.8:53
-    - 8.8.8.8:1053
+#  dns-hijack:
+#    - tcp://8.8.8.8:53
+#    - 8.8.8.8:1053
 
