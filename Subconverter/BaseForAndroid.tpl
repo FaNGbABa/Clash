@@ -37,9 +37,9 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-  tun:
-    enable: true
-    stack: gvisor
-    dns-hijack:
-      - 198.18.0.2:53
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 198.18.0.2:53
 
