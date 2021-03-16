@@ -1,0 +1,2 @@
+payload:
+  - '+.otag.h2os.com'
