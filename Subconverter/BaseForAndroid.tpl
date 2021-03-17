@@ -27,8 +27,8 @@ dns:
     - 'xbox.*.microsoft.com'
     - '*.*.*.xboxlive.com'
   nameserver:
-     - 'https://dns-unfiltered.adguard.com/dns-query'
-     - 'https://dh-dns.global-idc.net/dns-query'
+    - 'https://dns-unfiltered.adguard.com/dns-query'
+    - 'https://dh-dns.global-idc.net/dns-query'
   fallback:
     - 'https://dns-unfiltered.adguard.com/dns-query'
     - 'https://dh-dns.global-idc.net/dns-query'
