@@ -27,12 +27,13 @@ dns:
     - 'xbox.*.microsoft.com'
     - '*.*.*.xboxlive.com'
   nameserver:
-    - 'https://dh-dns.global-idc.net/dns-query'
-    - 'tls://vdpiya.d.rubyfish.cn:853'
+     - 'https://dns-unfiltered.adguard.com/dns-query'
+#    - 'https://dh-dns.global-idc.net/dns-query'
+#    - 'tls://vdpiya.d.rubyfish.cn:853'
   fallback:
-    - 'https://dh-dns.global-idc.net/dns-query'
-    - 'https://dns.google/dns-query'
-    - 'https://dns-family.adguard.com/dns-query'
+    - 'https://dns-unfiltered.adguard.com/dns-query'
+#    - 'https://dh-dns.global-idc.net/dns-query'
+#    - 'https://dns.google/dns-query'
   fallback-filter:
     geoip: true
     ipcidr:
