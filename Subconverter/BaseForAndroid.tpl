@@ -13,7 +13,7 @@ hosts:
 dns:
   enable: true
   listen: 127.0.0.1:1053
-  enhanced-mode: redir-host #fake-ip
+  enhanced-mode: fake-ip #redir-host
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
