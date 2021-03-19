@@ -1,17 +1,20 @@
 payload:
   - PROCESS-NAME,sg.hbo.hbogo
+  - PROCESS-NAME,hk.hbo.hbogo
+  - PROCESS-NAME,com.hbo.hbonow
   - DOMAIN-SUFFIX,hbo.com
   - DOMAIN-SUFFIX,hbogo.com
   - DOMAIN-SUFFIX,hbonow.com
-  - DOMAIN-SUFFIX,hboasia.com
   - DOMAIN-SUFFIX,hbomax.com
+  - DOMAIN-SUFFIX,hbomaxcdn.com
+  - DOMAIN-SUFFIX,hboasia.com
   - DOMAIN-SUFFIX,hbogoasia.hk
+  - DOMAIN-SUFFIX,hbogoasia.com
   - DOMAIN-SUFFIX,now.com.hk
   - DOMAIN-SUFFIX,nowe.com
   - DOMAIN-SUFFIX,now-tv.com
   - DOMAIN-SUFFIX,now-ashare.com
   - DOMAIN-SUFFIX,youboranqs01.com
-  - DOMAIN-SUFFIX,hbogoasia.com
   - DOMAIN-SUFFIX,manifest.prod.boltdns.net
   - DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com
   - DOMAIN,bcbolthboa-a.akamaihd.net
