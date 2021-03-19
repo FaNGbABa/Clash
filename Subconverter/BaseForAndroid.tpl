@@ -90,7 +90,6 @@ dns:
   fallback:
     - 'https://dns.google/dns-query'
     - 'https://dh-dns.global-idc.net/dns-query'
-
   fallback-filter:
     geoip: true
     ipcidr:
@@ -110,3 +109,6 @@ dns:
       - 224.0.0.0/4
       - 240.0.0.0/4
       - 255.255.255.255/32
+    domain:
+      - '+.baidu.com'
+      
