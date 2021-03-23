@@ -1,4 +1,3 @@
-#非中国大陆使用的顶级域名
 HOST-SUFFIX,gov,PROXY
 HOST-SUFFIX,mil,PROXY
 HOST-SUFFIX,edu,PROXY
