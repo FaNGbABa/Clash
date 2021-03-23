@@ -17,12 +17,12 @@ const $ = API("birthday", true);
 const title = "🐣破壳日🐣";
 
 $.config = {
-  username: "房佳伟", // 姓名
-  birthday: "2001-08-24", // 生日日期
-  physiologicalDefault: "", // 最近一次来周期时间
-  physiologicalCycle: "", // 下一次周期
-  nongli: true, // 农历生日
-  eday: "",
+  username: "FANGJIAWEI", // 姓名
+  birthday: "1998-07-04", // 生日日期
+  physiologicalDefault: "2021-03-02", // 最近一次来周期时间
+  physiologicalCycle: "31", // 下一次周期
+  nongli: false, // 农历生日
+  eday: "2020-10-12",
   loveWords: true,
   isLeapMonth: false, //如果是农历闰月第四个参数赋值true即可
 };
@@ -66,7 +66,7 @@ $.log($.config);
   getPhysiologicalDay();
 
   let content = `
-  [🐣${$.config.username}🐣]：${$.oneSay || ""}
+  [🌹每日情话🌹]：${$.oneSay || ""}
 
   📆农历：${$.lunar}
 
@@ -76,7 +76,7 @@ $.log($.config);
 
   🌠星座：${$.astro}
 
-  🎂下个：${$.birthday}（${$.nextDay}天）
+  🎂下个生日：${$.birthday}（${$.nextDay}天）
 
   `;
   if ($.pDay) {
@@ -86,7 +86,7 @@ $.log($.config);
   if ($.eDay) {
     content += `
     
-  💏相识：${$.eDay} 天  📆：${$.config.eday}`;
+  💏已经相识：${$.eDay} 天  📆：${$.config.eday}`;
   }
   $.log(content);
   $.notify(`@${$.config.username}`, "嘿，在干嘛呀？", content, {
