@@ -85,11 +85,11 @@ dns:
     - 'xbox.*.*.microsoft.com'
     - '*.*.xboxlive.com'
   nameserver:
-    - 'tls://dot.pub:853'
-    - 119.29.29.29
+#    - 'tls://dot.pub:853'
     - 'https://dh-dns.global-idc.net/dns-query'
+    - 114.114.114.114
   fallback:
-    - 'https://doh.pub/dns-query'
+#    - 'https://doh.pub/dns-query'
     - 'https://dns.google/dns-query'
     - 'https://dh-dns.global-idc.net/dns-query'
   fallback-filter:
