@@ -1,9 +1,0 @@
-payload:
-  ## > Twitch
-  # Url：https://git.dler.io/FaNGbABa/Clash/master/RuleSet/Twitch.yaml
-  - DOMAIN-SUFFIX,twitch.tv
-  - DOMAIN-SUFFIX,twitchcdn.net
-  - DOMAIN-SUFFIX,ttvnw.net
-  - DOMAIN-SUFFIX,ext-twitch.tv
-  - DOMAIN-SUFFIX,jtvnw.net
-  - DOMAIN-SUFFIX,twitchsvc.net
