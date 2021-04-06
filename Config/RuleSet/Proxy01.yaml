@@ -1,3 +1,0 @@
-payload:
-  # 禁止大陆访问的网站
-  - DOMAIN-SUFFIX,cloud-wing.net
