@@ -1,4 +1,0 @@
-  
-function FindProxyForURL(url, host) {
-    return "PROXY 192.168.215.78:8888; DIRECT";
-}
