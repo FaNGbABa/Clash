@@ -1,0 +1,14 @@
+[custom]
+add_emoji=true
+remove_old_emoji=true
+emojis=!!import:https://ghproxy.com/https://gist.githubusercontent.com/FaNGbABa/fcd7aaa7c3723e2ed38cc52af1942654/raw/4e5a9cfaf428a8e1d2e5a88c882dfed547b171d0/Emojis.list
+enable_rule_generator=true
+overwrite_original_rules=true
+
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/FaNGbABa/Clash/master/RuleSet/Providers/ip.txt
+# 兜底规则
+surge_ruleset=🐟 其它流量,[]MATCH
+
+
+# 分组设置标志位
+custom_proxy_group=🐟 其它流量`select`.*
