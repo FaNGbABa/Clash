@@ -1,0 +1,26 @@
+PROXY（代理）`select`[]fallback（轮询）`[]HK-Transfer（香港线路）`[]SG-Transfer（新加坡线路）`[]US-Transfer（美国线路）`[]TW-Transfer（台湾线路）
+PornGuard（家庭防护）`select`[]REJECT（拦截）`[]PROXY（代理）
+SpeedTest（测速）`select`[]DOMESTIC（直连）`.*
+Microsoft（微软服务）`select`[]DOMESTIC（直连）`[]HK-Transfer（香港线路）
+Apple（苹果服务）`select`[]DOMESTIC（直连）`[]US-Transfer（美国线路）`[]HK-Transfer（香港线路）`[]SG-Transfer（新加坡线路）`[]TW-Transfer（台湾线路）`[]Unpopular-Transfer（冷门线路）
+bilibili（哔哩哔哩动画）`select`[]DOMESTIC（直连）`[]TW-Transfer（台湾线路）
+HBO GO（菲律宾）`select`(菲律宾)
+Telegram（电报吹水）`select`[]url-test（延迟最低）`[]HK-Transfer（香港线路）`[]SG-Transfer（新加坡线路）
+YouTube（油管）`select`[]Google（谷歌服务）`[]HK-Transfer（香港线路）`[]SG-Transfer（新加坡线路）`[]US-Transfer（美国线路）`[]TW-Transfer（台湾线路）
+GoogleFCM（谷歌全球推送服务）`select`[]DOMESTIC（直连）`[]PROXY（代理）
+Google（谷歌服务）`select`[]US-Transfer（美国线路）`[]HK-Transfer（香港线路）`[]SG-Transfer（新加坡线路）`[]TW-Transfer（台湾线路）`[]JP-Transfer（日本线路）`[]Unpopular-Transfer（冷门线路）
+Spotify（声破天）`select`[]Unpopular-Transfer（冷门线路）`[]TW-Transfer（台湾线路）`[]DOMESTIC（直连）
+Streaming（流媒体）`select`[]SG-Transfer（新加坡线路）`[]US-Transfer（美国线路）
+NetEaseMusic（网易云音乐）`select`[]DOMESTIC（直连）
+ChinaDomain（大陆域名）`select`[]DOMESTIC（直连）
+ChianIPs（大陆IP地址集）`select`[]DOMESTIC（直连）
+url-test（延迟最低）`url-test`(香港|HK)`[]REJECT`http://connectivitycheck.gstatic.com/generate_204`180,5,60
+fallback（轮询）`fallback`(HK).*(IEPL)`(香港).*(Kirino|HKG|HKBN|HKT|NTT|PCCW)`http://connectivitycheck.gstatic.com/generate_204`180,5,60
+HK-Transfer（香港线路）`select`(香港|HK)
+TW-Transfer（台湾线路）`select`(台湾)
+SG-Transfer（新加坡线路）`select`(狮城|SG)
+US-Transfer（美国线路）`select`(美国|USA)
+JP-Transfer（日本线路）`select`(日本)
+Unpopular-Transfer（冷门线路）`select`(越南|印尼|马来西亚|泰国|韩国|德国|巴西|澳洲|法国|俄罗斯|希腊|英国|印度|匈牙利|加拿大|意|瑞士|以色列|荷兰|土耳其|爱沙尼亚)
+DOMESTIC（直连）`select`[]DIRECT
+REJECT（拦截）`select`[]REJECT
