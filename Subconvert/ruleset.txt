@@ -1,0 +1,18 @@
+PornGuard（家庭防护）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/FaNGbABa/Clash/master/Surge/RuleSet/Porn.yaml,10800
+SpeedTest（测速）,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/RuleSet/Providers/SpeedTest_RuleSet.txt,10800
+Microsoft（微软服务）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml,10800
+Apple（苹果服务）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml,10800
+bilibili（哔哩哔哩动画）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml,10800
+HBO GO（菲律宾）,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/RuleSet/Providers/HBOGO_RuleSet.txt,10800
+Telegram（电报吹水）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml,10800
+YouTube（油管）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml,10800
+GoogleFCM（谷歌全球推送服务）,clash-classic:https://cdn.jsdelivr.net/gh/FaNGbABa/Clash@master/RuleSet/Providers/GoogleFCM_RuleSet.txt,10800
+Google（谷歌服务）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml,10800
+Spotify（声破天）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml,10800
+NetEaseMusic（网易云音乐）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml,10800
+Streaming（流媒体）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml,10800
+DMCA Sensitive（版权问题）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/LM-Firefly/Rules/master/Clash-RuleSet-Classical/Special/DMCA-Sensitive.yaml,10800
+DMCA Sensitive（版权问题）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrivateTracker/PrivateTracker.yaml
+ChinaDomain（大陆域名）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaTest/ChinaTest_Classical.yaml,10800
+ChianIPs（大陆IP地址集）,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_Classical.yaml,10800
+PROXY（代理）,[]MATCH
