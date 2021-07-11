@@ -134,8 +134,8 @@ dns:
   fallback:
     - https://doh.dns.sb/dns-query
   fallback-filter:
-    geoip: true # default
-    ipcidr: # ips in these subnets will be considered polluted
+    geoip: true
+    ipcidr: 
       - 0.0.0.0/32
       - 100.64.0.0/10
       - 127.0.0.0/8
@@ -154,9 +154,9 @@ allow-wifi-access = true
 wifi-access-http-port = 8838
 wifi-access-socks5-port = 8839
 external-controller-access = 6170@0.0.0.0:6155
-dns-server = 119.29.29.29, 223.5.5.5
-doh-server = https://9.9.9.9/dns-query
-hijack-dns = 8.8.8.8:53
+# dns-server = 119.29.29.29, 223.5.5.5
+doh-server = https://223.5.5.5/dns-query
+# hijack-dns = 8.8.8.8:53
 always-real-ip = *.lan, *.localdomain, *.example, *.invalid, *.localhost, *.test, *.local, *.home.arpa, *.linksys.com, *.linksyssmartwifi.com, *.router.asus.com, swscan.apple.com, mesu.apple.com, *.msftconnecttest.com, *.msftncsi.com, msftconnecttest.com, msftncsi.com, lens.l.google.com, stun.l.google.com, proxy.golang.org, time.*.com, time.*.gov, time.*.edu.cn, time.*.apple.com, time1.*.com, time2.*.com, time3.*.com, time4.*.com, time5.*.com, time6.*.com, time7.*.com, ntp.*.com, ntp1.*.com, ntp2.*.com, ntp3.*.com, ntp4.*.com, ntp5.*.com, ntp6.*.com, ntp7.*.com, *.time.edu.cn, *.ntp.org.cn, *.pool.ntp.org, time1.cloud.tencent.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, xnotify.xboxlive.com, localhost.ptlogin2.qq.com, localhost.sec.qq.com, stun.*.*, stun.*.*.*, *.stun.*.*, *.stun.*.*.*, *.stun.*.*.*.*
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 tun-included-routes = 192.168.1.12/32
